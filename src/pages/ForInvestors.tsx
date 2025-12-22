@@ -1,4 +1,3 @@
-import './pages.css'
 
 export default function ForInvestors() {
   return (

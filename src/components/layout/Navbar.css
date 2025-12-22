@@ -1,6 +1,6 @@
 @layer components {
   .site-header {
-    @apply sticky top-0 z-100 bg-gradient-to-b from-white to-white/98 border-b border-gray-200 py-4 shadow-lg backdrop-blur-sm;
+    @apply sticky top-0 z-100 bg-linear-to-b from-white to-white/98 border-b border-gray-200 py-4 shadow-lg backdrop-blur-sm;
   }
 
   .site-header .container {
@@ -12,7 +12,7 @@
   }
 
   .brand-text {
-    @apply text-2xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent -tracking-wider;
+    @apply text-2xl font-black bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent -tracking-wider;
   }
 
   .main-nav {
@@ -24,7 +24,7 @@
   }
 
   .main-nav a::before {
-    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-secondary to-primary transition-all duration-400 ease-out;
+    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-linear-to-r from-secondary to-primary transition-all duration-400 ease-out;
     content: "";
   }
 
@@ -33,7 +33,7 @@
   }
 
   .main-nav .nav-cta {
-    @apply bg-gradient-to-r from-secondary to-primary text-white py-1.5 px-6 rounded font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
+    @apply bg-linear-to-r from-secondary to-primary text-white py-1.5 px-6 rounded font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
   }
 
   .main-nav .nav-cta::before {

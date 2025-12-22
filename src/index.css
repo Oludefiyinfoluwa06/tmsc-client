@@ -1,29 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   body {
     @apply antialiased;
-  }
-
-  h1 {
-    @apply font-bold text-primary;
-  }
-
-  h2 {
-    @apply font-bold text-primary;
-  }
-
-  h3 {
-    @apply font-bold text-primary;
-  }
-
-  a {
-    @apply font-medium text-primary;
-  }
-
-  button {
-    @apply font-medium rounded transition-all duration-200;
   }
 }
