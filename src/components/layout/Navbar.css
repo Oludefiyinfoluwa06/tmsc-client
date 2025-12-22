@@ -1,0 +1,88 @@
+@layer components {
+  .site-header {
+    @apply sticky top-0 z-100 bg-linear-to-b from-white to-white/98 border-b border-gray-200 py-4 shadow-lg backdrop-blur-sm;
+  }
+
+  .site-header .container {
+    @apply max-w-5xl mx-auto px-8 flex justify-between items-center;
+  }
+
+  .brand {
+    @apply no-underline transition-transform duration-300 ease-out flex items-center hover:scale-105;
+  }
+
+  .brand-text {
+    @apply text-2xl font-black bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent -tracking-wider;
+  }
+
+  .main-nav {
+    @apply flex gap-12 items-center;
+  }
+
+  .main-nav a {
+    @apply text-gray-700 no-underline font-semibold text-sm transition-all duration-300 relative block py-2 hover:text-secondary;
+  }
+
+  .main-nav a::before {
+    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-linear-to-r from-secondary to-primary transition-all duration-400 ease-out;
+    content: "";
+  }
+
+  .main-nav a:hover::before {
+    @apply w-full;
+  }
+
+  .main-nav .nav-cta {
+    @apply bg-linear-to-r from-secondary to-primary text-white py-1.5 px-6 rounded font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
+  }
+
+  .main-nav .nav-cta::before {
+    @apply hidden;
+  }
+
+  .mobile-menu-toggle {
+    @apply hidden bg-transparent border-none cursor-pointer text-primary transition-colors duration-300 p-2 hover:text-secondary;
+  }
+
+  @media (max-width: 768px) {
+    .site-header {
+      @apply py-3;
+    }
+
+    .site-header .container {
+      @apply relative;
+    }
+
+    .brand-text {
+      @apply text-xl;
+    }
+
+    .mobile-menu-toggle {
+      @apply block;
+    }
+
+    .main-nav {
+      @apply absolute top-full left-0 right-0 bg-white flex-col gap-0 max-h-0 overflow-hidden transition-all duration-300 border-b border-gray-200 shadow-xl z-50;
+    }
+
+    .main-nav.active {
+      @apply max-h-96;
+    }
+
+    .main-nav a {
+      @apply py-4 px-8 border-b border-gray-200 hover:bg-gray-100;
+    }
+
+    .main-nav a:last-child {
+      @apply border-b-0;
+    }
+
+    .main-nav .nav-cta {
+      @apply m-4 py-2.5;
+    }
+
+    .main-nav a::before {
+      @apply hidden;
+    }
+  }
+}

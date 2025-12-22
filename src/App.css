@@ -1,19 +1,9 @@
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+@layer components {
+  .site-root {
+    @apply flex flex-col min-h-screen;
+  }
 
-/* ============================================
-   SITE LAYOUT
-   ============================================ */
-
-.site-root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
+  main {
+    @apply flex-1;
+  }
 }

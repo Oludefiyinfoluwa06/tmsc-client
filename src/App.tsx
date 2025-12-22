@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -12,9 +11,9 @@ import ForLocal from './pages/ForLocal'
 
 function AppLayout() {
   return (
-    <div className="site-root">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
