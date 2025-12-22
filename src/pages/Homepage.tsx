@@ -18,7 +18,7 @@ export default function Homepage() {
     <div className="homepage">
       <section className="hero">
         <video className="hero-video" autoPlay muted loop playsInline>
-          <source src="https://media.w3.org/cc0-video/big_buck_bunny_720p_30mb.mp4" type="video/mp4" />
+          <source src="../assets/hero-vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="hero-overlay"></div>
