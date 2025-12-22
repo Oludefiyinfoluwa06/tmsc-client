@@ -13,7 +13,7 @@ export default function HeroSection() {
         playsInline
         preload="auto"
       >
-        <source src="/src/assets/hero-vid.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
