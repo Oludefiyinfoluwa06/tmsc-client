@@ -63,15 +63,16 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden pb-6 border-t border-white/20 bg-black/80">
+          <nav className="md:hidden pb-6 border-t border-white/20 bg-black/80 mb-4 rounded-lg">
             <div className="flex flex-col gap-1 py-4">
               <Link to="/" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg">Home</Link>
               <Link to="/about" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg">About</Link>
-              <Link to="/for-governments" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For Governments</Link>
+              {/* <Link to="/for-governments" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For Governments</Link>
               <Link to="/for-investors" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For Investors</Link>
               <Link to="/for-oems" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For OEMs</Link>
-              <Link to="/for-local" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For Local Industry</Link>
-              <Link to="/projects" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg">Projects</Link>
+              <Link to="/for-local" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg ml-2">For Local Industry</Link> */}
+              <Link to="/products" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg">Products</Link>
+              <Link to="/solutions" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-3 hover:bg-white/10 hover:text-white transition-colors duration-300 rounded-lg">Solutions</Link>
             </div>
             <div className="flex flex-col gap-2 pt-4 px-4 border-t border-white/20">
               <Link to="/contact" onClick={closeMobileMenu} className="text-sm font-semibold text-white no-underline px-4 py-2.5 border border-white/30 rounded-lg transition-all duration-300 hover:border-white hover:text-white hover:bg-white/10 text-center">Contact</Link>
