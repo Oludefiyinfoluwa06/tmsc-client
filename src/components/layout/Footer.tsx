@@ -69,11 +69,11 @@ export default function Footer() {
                 </a>
                 <a href="tel:+234800000000" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
                   <Phone size={18} className="shrink-0 mt-0.5" />
-                  <span>+234 800 000 0000</span>
+                  <span>+234 903 021 5252</span>
                 </a>
                 <div className="flex items-start gap-3 text-white/80 text-sm cursor-default">
                   <MapPin size={18} className="shrink-0 mt-0.5" />
-                  <span>Lagos, Nigeria</span>
+                  <span>3a Rudolf Close, off Katsina-ala crescent, Maitama, Abuja</span>
                 </div>
               </div>
             </div>
