@@ -1,4 +1,5 @@
 import { Building2, Lightbulb, CheckCircle2, ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function CorridorSection() {
   return (
@@ -44,6 +45,13 @@ export default function CorridorSection() {
             <h4 className="text-xl font-bold text-white mb-2">Execution</h4>
             <p className="text-gray-300 text-sm">Training, machinery installation & measurable results</p>
           </div>
+        </div>
+
+        <div className="flex justify-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+          <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white cursor-pointer bg-red-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-red-700">
+            Join the Corridor
+            <ArrowRight size={20} />
+          </Link>
         </div>
       </div>
     </section>

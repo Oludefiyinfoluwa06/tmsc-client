@@ -1,5 +1,55 @@
 import { Link } from 'react-router-dom'
-import { Factory, BarChart3, Zap, CheckCircle2, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+
+// Import pillar images (placeholders - update with your actual image paths)
+import modoolaImg from '../../assets/modoola.jpeg'
+import machineExchangeImg from '../../assets/machine-exchange.jpeg'
+import titaniumLaserImg from '../../assets/titanium-laser.jpeg'
+
+const pillars = [
+  {
+    id: 1,
+    number: '01',
+    title: 'MODOOLA',
+    image: modoolaImg,
+    description: 'Modular industrial & training centers — deployable capacity close to demand.',
+    features: [
+      'TVET integration & partnerships',
+      'Industrial park deployment',
+      'Regional training hubs'
+    ],
+    link: '/products/modoola',
+    linkText: 'Request Concept Pack'
+  },
+  {
+    id: 2,
+    number: '02',
+    title: 'Machine Exchange',
+    image: machineExchangeImg,
+    description: 'Machinery trading & financing corridor — connecting suppliers to deployers globally.',
+    features: [
+      'Structured financing options',
+      'Vetted OEM suppliers',
+      'Volume deployment support'
+    ],
+    link: '/products/exchange',
+    linkText: 'Submit Mandate'
+  },
+  {
+    id: 3,
+    number: '03',
+    title: 'TITANIUM LASER',
+    image: titaniumLaserImg,
+    description: 'Advanced laser machinery with comprehensive training and after-sales ecosystem.',
+    features: [
+      'Cutting, welding, marking, cleaning',
+      'Full operator training program',
+      'Lifetime technical support'
+    ],
+    link: '/products/titanium',
+    linkText: 'Explore Solutions'
+  }
+]
 
 export default function PillarsSection() {
   return (
@@ -8,101 +58,52 @@ export default function PillarsSection() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <span className="text-primary font-semibold uppercase tracking-wider text-sm">Industrial Integration</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">Three Integrated Pillars</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">Modular centers, machinery corridors, and laser ecosystems working as one system.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* MODOOLA */}
-          <div className="bg-white rounded-2xl p-10 border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden group animate-slide-in-left" style={{ animationDelay: '0.1s' }}>
-            <div className="absolute top-0 left-0 w-1 h-full bg-linear-to-b from-primary to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="flex items-center justify-between mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-                <Factory size={32} className="text-primary group-hover:text-white transition-colors" />
-              </div>
-              <span className="text-6xl font-bold text-gray-200 leading-none">01</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3 uppercase tracking-wider">MODOOLA</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">Modular industrial & training centers — deployable capacity close to demand.</p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">TVET integration & partnerships</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Industrial park deployment</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Regional training hubs</span>
-              </li>
-            </ul>
-            <Link to="/products/modoola" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:translate-x-1 transition-transform">
-              Request Concept Pack <ArrowRight size={16} />
-            </Link>
-          </div>
+          {pillars.map((pillar, idx) => (
+            <div
+              key={pillar.id}
+              className="group relative h-96 rounded-2xl overflow-hidden animate-slide-in-left shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+              style={{ animationDelay: `${(idx + 1) * 0.1}s` }}
+            >
+              {/* Background Image */}
+              <img
+                src={pillar.image}
+                alt={pillar.title}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
 
-          {/* Machine Exchange Platform */}
-          <div className="bg-white rounded-2xl p-10 border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden group animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
-            <div className="absolute top-0 left-0 w-1 h-full bg-linear-to-b from-primary to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="flex items-center justify-between mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-                <BarChart3 size={32} className="text-primary group-hover:text-white transition-colors" />
-              </div>
-              <span className="text-6xl font-bold text-gray-200 leading-none">02</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3 uppercase tracking-wider">Machine Exchange</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">Machinery trading & financing corridor — connecting suppliers to deployers globally.</p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Structured financing options</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Vetted OEM suppliers</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Volume deployment support</span>
-              </li>
-            </ul>
-            <Link to="/products/exchange" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:translate-x-1 transition-transform">
-              Submit Mandate <ArrowRight size={16} />
-            </Link>
-          </div>
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition-all duration-300"></div>
 
-          {/* Titanium Laser */}
-          <div className="bg-white rounded-2xl p-10 border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden group animate-slide-in-left" style={{ animationDelay: '0.3s' }}>
-            <div className="absolute top-0 left-0 w-1 h-full bg-linear-to-b from-primary to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="flex items-center justify-between mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-                <Zap size={32} className="text-primary group-hover:text-white transition-colors" />
+              {/* Number - visible on default state */}
+              <div className="absolute top-8 right-8 text-6xl font-bold text-white/20 group-hover:opacity-0 transition-opacity duration-300">
+                {pillar.number}
               </div>
-              <span className="text-6xl font-bold text-gray-200 leading-none">03</span>
+
+              {/* Content - hidden by default, visible on hover */}
+              <div className="absolute inset-0 p-10 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-2xl font-bold text-white mb-3 uppercase tracking-wider">{pillar.title}</h3>
+                <p className="text-white/90 mb-6 leading-relaxed text-sm">{pillar.description}</p>
+
+                <ul className="space-y-2 mb-8">
+                  {pillar.features.map((feature, featureIdx) => (
+                    <li key={featureIdx} className="flex items-start gap-2 text-white/80 text-sm">
+                      <span className="text-red-500 mt-1">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link to={pillar.link} className="inline-flex items-center gap-2 text-red-500 font-semibold text-sm hover:text-red-400 transition-colors w-fit">
+                  {pillar.linkText} <ArrowRight size={16} />
+                </Link>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3 uppercase tracking-wider">TITANIUM LASER</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">Advanced laser machinery with comprehensive training and after-sales ecosystem.</p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Cutting, welding, marking, cleaning</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Full operator training program</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-700">
-                <CheckCircle2 size={20} className="text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">Lifetime technical support</span>
-              </li>
-            </ul>
-            <Link to="/products/titanium" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:translate-x-1 transition-transform">
-              Request Titanium Pack <ArrowRight size={16} />
-            </Link>
-          </div>
+          ))}
         </div>
       </div>
     </section>

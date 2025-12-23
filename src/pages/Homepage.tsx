@@ -1,5 +1,5 @@
 import HeroSection from '../components/home/HeroSection'
-import PathwaysSection from '../components/home/PathwaysSection'
+import AboutSection from '../components/home/AboutSection'
 import PillarsSection from '../components/home/PillarsSection'
 import CorridorSection from '../components/home/CorridorSection'
 import CredibilitySection from '../components/home/CredibilitySection'
@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <div className="w-full">
       <HeroSection />
-      <PathwaysSection />
+      <AboutSection />
       <PillarsSection />
       <CorridorSection />
       <CredibilitySection />
