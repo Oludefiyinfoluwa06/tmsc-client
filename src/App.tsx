@@ -8,6 +8,7 @@ import ForGovernments from './pages/ForGovernments'
 import ForInvestors from './pages/ForInvestors'
 import ForOEMs from './pages/ForOEMs'
 import ForLocal from './pages/ForLocal'
+import Products from './pages/Products'
 
 function AppLayout() {
   return (
@@ -17,6 +18,7 @@ function AppLayout() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/for-governments" element={<ForGovernments />} />
           <Route path="/for-investors" element={<ForInvestors />} />
