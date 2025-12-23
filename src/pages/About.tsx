@@ -1,9 +1,15 @@
+import HeroSection from '../components/about/HeroSection';
+import EngagementHighlights from '../components/about/EngagementHighlights';
+import SystemSection from '../components/about/SystemSection';
+import CTASection from '../components/about/CTASection';
 
 export default function About() {
   return (
-    <div className="page about">
-      <h1>About Machine & Skills</h1>
-      <p>Who we are, why we exist, and our industrial corridor philosophy.</p>
-    </div>
-  )
+    <>
+      <HeroSection />
+      <EngagementHighlights />
+      <SystemSection />
+      <CTASection />
+    </>
+  );
 }

@@ -4,18 +4,18 @@ import aboutImage from '../../assets/about.jpeg'
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">About Us</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">About Us</h2>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-8">
               Empowering Artisans, <br />Transforming Industries
             </h3>
 
-            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-white/70 text-lg leading-relaxed">
               <p>
                 The Machine and Skills Company Ltd is a trailblazer in industrial machine training, dedicated to reshaping the manufacturing sector with innovative solutions and unparalleled expertise. As pioneers in modern fabrication techniques, we are committed to equipping artisans with cutting-edge skills to thrive in today's dynamic industrial landscape.
               </p>
@@ -25,7 +25,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <Link to="/about" className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors mt-8">
+            <Link to="/about" className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-500 transition-colors mt-8">
               Read More
               <ArrowRight size={18} />
             </Link>
