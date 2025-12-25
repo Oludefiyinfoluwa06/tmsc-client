@@ -5,7 +5,6 @@ import logo from '../../assets/logo.jpeg';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false)
   const location = useLocation()
 
   const isActive = (path: string) => {
