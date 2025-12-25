@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Zap } from 'lucide-react'
 
 // Partner logo imports
 import nnpc from '../../assets/partners/nnpc.png'
@@ -32,36 +32,41 @@ export default function HeroSection() {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-gray-900/60 via-primary/50 to-blue-900/60 z-10"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-20 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl z-0"></div>
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl z-0"></div>
 
       <div className="relative z-20 w-full mx-auto px-6 md:px-8 text-left mt-4">
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
-          Africa's Industrial <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 via-blue-400 to-cyan-400">Capacity Engine</span>
+        <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/50 rounded-full backdrop-blur animate-fade-in-up">
+          <Zap size={16} className="text-red-400" />
+          <span className="text-red-300 text-sm font-semibold">Industrial Transformation Initiative</span>
+        </div>
+
+        <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 animate-fade-in-up">
+          Connect Your Industrial <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-emerald-400 to-cyan-400">Capacity Today</span>
         </h1>
 
         <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-          From policy to welded steel. We deploy capacity, not PowerPoints. Integrating modular centers, machinery trading corridors, and advanced laser ecosystems.
+          Trade machines, access modular centers, and scale production across Africa through the Machine Exchange Program.
         </p>
 
         <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          <Link className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-white cursor-pointer bg-red-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-red-700" to="/contact">
-            Book Strategy Call
-            <ArrowRight size={18} />
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/machine-exchange-program">
+            Explore Program
+            <ArrowRight size={20} />
           </Link>
-          <Link className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-base cursor-pointer bg-transparent text-white border-2 border-white transition-all duration-300 hover:bg-white/10 hover:-translate-y-1" to="/contact">
-            Submit Mandate
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-white/10 text-white border-2 border-white/30 transition-all duration-300 hover:bg-white/20 hover:border-white hover:-translate-y-1" to="/contact">
+            Get Started
           </Link>
         </div>
       </div>
 
       {/* Partner Logos Scroll Section */}
-      <div className="absolute bottom-0 left-0 right-0 w-full bg-linear-to-t from-black/80 to-transparent pt-12 pb-8 z-20">
+      <div className="absolute bottom-0 left-0 right-0 w-full bg-linear-to-t from-black/90 via-black/60 to-transparent pt-20 pb-8 z-20">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-center text-white/70 text-sm font-semibold uppercase tracking-widest mb-6">Trusted by leading organizations</p>
+          <p className="text-center text-white/70 text-sm font-semibold uppercase tracking-widest mb-8">Trusted by leading organizations</p>
           <div className="overflow-hidden">
             <div className="flex gap-12 animate-scroll whitespace-nowrap">
               {/* Partner logos - repeat for continuous scroll */}
@@ -71,7 +76,7 @@ export default function HeroSection() {
                     key={idx} 
                     src={partner} 
                     alt={`Partner ${idx + 1}`}
-                    className="h-12 w-32 object-contain shrink-0"
+                    className="h-12 w-32 object-contain shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
                   />
                 ))}
               </div>
@@ -81,7 +86,7 @@ export default function HeroSection() {
                     key={`repeat-${idx}`} 
                     src={partner} 
                     alt={`Partner ${idx + 1}`}
-                    className="h-12 w-32 object-contain shrink-0"
+                    className="h-12 w-32 object-contain shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
                   />
                 ))}
               </div>
