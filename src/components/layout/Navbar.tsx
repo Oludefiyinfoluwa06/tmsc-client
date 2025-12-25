@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import logo from '../../assets/logo.jpeg';
 
@@ -18,10 +18,6 @@ export default function Navbar() {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false)
-  }
-
-  const toggleSolutionsDropdown = () => {
-    setSolutionsDropdownOpen(!solutionsDropdownOpen)
   }
 
   return (
