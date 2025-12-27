@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, MapPin, Phone, Facebook, Linkedin, Twitter, Instagram, ArrowRight } from 'lucide-react'
+import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -22,40 +22,18 @@ export default function Footer() {
               <p className="text-white/80 leading-relaxed mb-8 text-sm">
                 Integrating modular industrial centers, machinery trading corridors, and advanced laser ecosystems to build Africa's manufacturing future.
               </p>
-              <div className="flex gap-4">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 flex items-center justify-center bg-white/10 border border-white/20 rounded-lg text-white/70 transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:-translate-y-1">
-                  <Facebook size={18} />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-10 h-10 flex items-center justify-center bg-white/10 border border-white/20 rounded-lg text-white/70 transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:-translate-y-1">
-                  <Twitter size={18} />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 flex items-center justify-center bg-white/10 border border-white/20 rounded-lg text-white/70 transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:-translate-y-1">
-                  <Linkedin size={18} />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 flex items-center justify-center bg-white/10 border border-white/20 rounded-lg text-white/70 transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:-translate-y-1">
-                  <Instagram size={18} />
-                </a>
-              </div>
             </div>
 
-            {/* Solutions */}
             <div>
-              <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-white">Solutions</h4>
+              <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-white">Company</h4>
               <ul className="list-none p-0 m-0 space-y-3">
-                <li><Link to="/for-governments" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">For Governments <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                <li><Link to="/for-investors" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">For Investors <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                <li><Link to="/for-oems" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">For OEMs <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                <li><Link to="/for-local" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">For Local Industry <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-              </ul>
-            </div>
-
-            {/* Products */}
-            <div>
-              <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-white">Products</h4>
-              <ul className="list-none p-0 m-0 space-y-3">
-                <li><Link to="/products/modoola" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">MODOOLA <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                <li><Link to="/products/exchange" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Machine Exchange <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                <li><Link to="/products/titanium" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Titanium Laser <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Home <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/about" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">About <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/machine-exchange-program" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Programs <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/modular-centers" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Centers <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/platform" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Platform <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/gallery" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Gallery <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                <li><Link to="/partners" className="text-white/80 no-underline text-sm transition-all duration-300 hover:text-white inline-flex items-center gap-1">Partners <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
               </ul>
             </div>
 
@@ -63,11 +41,11 @@ export default function Footer() {
             <div>
               <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-white">Get in Touch</h4>
               <div className="flex flex-col gap-4">
-                <a href="mailto:info@machineandskills.com" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
+                <a href="mailto:hello@machineexchange.co" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
                   <Mail size={18} className="shrink-0 mt-0.5" />
-                  <span>info@machineandskills.com</span>
+                  <span>hello@machineexchange.co</span>
                 </a>
-                <a href="tel:+234800000000" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
+                <a href="tel:+27123456789" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
                   <Phone size={18} className="shrink-0 mt-0.5" />
                   <span>+234 903 021 5252</span>
                 </a>
@@ -82,15 +60,15 @@ export default function Footer() {
           {/* CTA Section */}
           <div className="py-12 border-t border-white/10">
             <div className="bg-linear-to-r from-primary/10 to-blue-600/10 border border-white/10 rounded-2xl p-12 text-center">
-              <h3 className="text-2xl font-bold text-white mb-3">Ready to build African industrial capacity?</h3>
-              <p className="text-white/80 mb-8 max-w-2xl mx-auto">Let's discuss your mandate, investment, or partnership opportunity.</p>
+              <h3 className="text-2xl font-bold text-white mb-3">Ready to Source Equipment?</h3>
+              <p className="text-white/80 mb-8 max-w-2xl mx-auto">Join our platform to browse machinery, connect with suppliers, and find the perfect equipment for your manufacturing needs.</p>
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:bg-blue-900">
-                  Book Strategy Call
+                  Get in Touch
                   <ArrowRight size={16} />
                 </Link>
-                <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-white/20 hover:border-white/40">
-                  Submit Mandate
+                <Link to="/platform" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-white/20 hover:border-white/40">
+                  Explore Platform
                 </Link>
               </div>
             </div>
