@@ -4,16 +4,14 @@ import Footer from './components/layout/Footer'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import ForGovernments from './pages/ForGovernments'
-import ForInvestors from './pages/ForInvestors'
-import ForOEMs from './pages/ForOEMs'
-import ForLocal from './pages/ForLocal'
-import Products from './pages/Products'
 import Gallery from './pages/Gallery'
 import MachineExchangeProgram from './pages/MachineExchangeProgram'
 import ModularCenters from './pages/ModularCenters'
 import Platform from './pages/Platform'
 import Partners from './pages/Partners'
+import Modoola from './pages/Modoola'
+import MachineExchange from './pages/MachineExchange'
+import TitaniumLaser from './pages/TitaniumLaser'
 
 function AppLayout() {
   return (
@@ -28,12 +26,10 @@ function AppLayout() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/for-governments" element={<ForGovernments />} />
-          <Route path="/for-investors" element={<ForInvestors />} />
-          <Route path="/for-oems" element={<ForOEMs />} />
-          <Route path="/for-local" element={<ForLocal />} />
+          <Route path="/products/modoola" element={<Modoola />} />
+          <Route path="/products/exchange" element={<MachineExchange />} />
+          <Route path="/products/titanium" element={<TitaniumLaser />} />
           <Route path="*" element={<Homepage />} />
         </Routes>
       </main>

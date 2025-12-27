@@ -79,13 +79,13 @@ export default function PillarsSection() {
               {/* Dark Overlay */}
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition-all duration-300"></div>
 
-              {/* Number - visible on default state */}
-              <div className="absolute top-8 right-8 text-6xl font-bold text-white/20 group-hover:opacity-0 transition-opacity duration-300">
+              {/* Number - visible on desktop, hidden on mobile */}
+              <div className="absolute top-8 right-8 text-6xl font-bold text-white/20 hidden md:block md:group-hover:opacity-0 transition-opacity duration-300">
                 {pillar.number}
               </div>
 
-              {/* Content - hidden by default, visible on hover */}
-              <div className="absolute inset-0 p-10 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* Content - visible on mobile, hidden on desktop by default */}
+              <div className="absolute inset-0 p-10 flex flex-col justify-end opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <h3 className="text-2xl font-bold text-white mb-3 uppercase tracking-wider">{pillar.title}</h3>
                 <p className="text-white/90 mb-6 leading-relaxed text-sm">{pillar.description}</p>
 

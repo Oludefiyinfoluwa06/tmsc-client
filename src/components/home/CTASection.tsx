@@ -21,9 +21,6 @@ export default function CTASection() {
               Book Strategy Call
               <ArrowRight size={18} />
             </Link>
-            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base cursor-pointer bg-white/10 text-white border-2 border-white/30 transition-all duration-300 hover:-translate-y-1 hover:bg-white/20 hover:border-white/50 animate-slide-in-right" to="/contact">
-              Submit Mandate
-            </Link>
           </div>
         </div>
       </div>

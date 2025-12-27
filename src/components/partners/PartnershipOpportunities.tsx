@@ -1,0 +1,85 @@
+import { CheckCircle, Settings, CreditCard, Building2, Wrench } from 'lucide-react'
+
+export default function PartnershipOpportunities() {
+  return (
+    <section className="py-32 bg-black">
+      <div className="max-w-6xl mx-auto px-6 md:px-8">
+        <div className="text-center mb-20">
+          <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">Opportunities</p>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Partnership Opportunities</h2>
+          <div className="w-16 h-1 bg-linear-to-r from-red-600 via-emerald-400 to-transparent mx-auto"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            {
+              title: 'Equipment Suppliers',
+              description: 'OEM manufacturers and equipment suppliers looking to expand African market reach',
+              benefits: [
+                'Access to pre-qualified buyers',
+                'Verified customer database',
+                'Marketing support',
+                'Financing facilitation',
+                'After-sales support integration'
+              ],
+              Icon: Settings
+            },
+            {
+              title: 'Financial Services',
+              description: 'Banks, fintech companies, and financing institutions offering flexible payment options',
+              benefits: [
+                'Vetted customer access',
+                'High transaction volume',
+                'Risk mitigation support',
+                'Portfolio growth opportunity',
+                'Platform integration'
+              ],
+              Icon: CreditCard
+            },
+            {
+              title: 'Government & Policy',
+              description: 'Government agencies seeking to build industrial capacity and skills development',
+              benefits: [
+                'Industrial infrastructure',
+                'Skills development programs',
+                'Economic development impact',
+                'TVET integration',
+                'Regional capacity building'
+              ],
+              Icon: Building2
+            },
+            {
+              title: 'Installation & Services',
+              description: 'Service providers offering installation, training, and maintenance services',
+              benefits: [
+                'Steady project pipeline',
+                'Certification support',
+                'Training programs',
+                'Quality assurance',
+                'Revenue opportunities'
+              ],
+              Icon: Wrench
+            }
+          ].map((partnership, idx) => (
+            <div key={idx} className="group relative">
+              <div className="absolute inset-0 bg-linear-to-br from-red-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <div className="relative bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl hover:border-red-600/50 transition-all duration-300 group-hover:-translate-y-2">
+                <div className="mb-4"><partnership.Icon className="text-red-400" size={36} /></div>
+                <h3 className="text-white text-xl font-semibold mb-3">{partnership.title}</h3>
+                <p className="text-white/70 mb-6 text-sm leading-relaxed">{partnership.description}</p>
+                <div className="space-y-3">
+                  {partnership.benefits.map((benefit, i) => (
+                    <div key={i} className="flex gap-2 items-start">
+                      <CheckCircle className="text-red-500 shrink-0 mt-0.5" size={18} />
+                      <span className="text-white/80 text-sm">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

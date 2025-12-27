@@ -31,6 +31,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/" className={`text-sm font-semibold no-underline transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 ${isActive('/') ? 'text-white after:w-full' : 'text-white hover:text-white/80 after:w-0 hover:after:w-full'}`}>Home</Link>
+            <Link to="/about" className={`text-sm font-semibold no-underline transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 ${isActive('/about') ? 'text-white after:w-full' : 'text-white hover:text-white/80 after:w-0 hover:after:w-full'}`}>About</Link>
             <Link to="/machine-exchange-program" className={`text-sm font-semibold no-underline transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 ${isActive('/machine-exchange-program') ? 'text-white after:w-full' : 'text-white hover:text-white/80 after:w-0 hover:after:w-full'}`}>Programs</Link>
             <Link to="/modular-centers" className={`text-sm font-semibold no-underline transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 ${isActive('/modular-centers') ? 'text-white after:w-full' : 'text-white hover:text-white/80 after:w-0 hover:after:w-full'}`}>Centers</Link>
             <Link to="/platform" className={`text-sm font-semibold no-underline transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 ${isActive('/platform') ? 'text-white after:w-full' : 'text-white hover:text-white/80 after:w-0 hover:after:w-full'}`}>Platform</Link>
@@ -40,8 +41,7 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Link to="/contact" className="text-sm font-semibold text-white no-underline px-4 py-2 border border-white/30 rounded-lg transition-all duration-300 hover:border-white hover:text-white hover:bg-white/10">Contact</Link>
-            <Link to="/contact" className="text-sm font-semibold text-white no-underline px-5 py-2.5 bg-red-600 rounded-lg transition-all duration-300 hover:shadow-lg hover:bg-red-700">Book Call</Link>
+            <Link to="/contact" className="text-sm font-semibold text-white no-underline px-5 py-2.5 bg-red-600 rounded-lg transition-all duration-300 hover:shadow-lg hover:bg-red-700">Contact</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,6 +59,7 @@ export default function Navbar() {
           <nav className="md:hidden pb-6 border-t border-white/20 bg-black/80 mb-4 rounded-lg">
             <div className="flex flex-col gap-1 py-4">
               <Link to="/" onClick={closeMobileMenu} className={`text-sm font-semibold no-underline px-4 py-3 transition-colors duration-300 rounded-lg ${isActive('/') ? 'text-red-600 bg-red-600/10' : 'text-white hover:bg-white/10 hover:text-white'}`}>Home</Link>
+              <Link to="/about" onClick={closeMobileMenu} className={`text-sm font-semibold no-underline px-4 py-3 transition-colors duration-300 rounded-lg ${isActive('/about') ? 'text-red-600 bg-red-600/10' : 'text-white hover:bg-white/10 hover:text-white'}`}>About</Link>
               <Link to="/machine-exchange-program" onClick={closeMobileMenu} className={`text-sm font-semibold no-underline px-4 py-3 transition-colors duration-300 rounded-lg ${isActive('/machine-exchange-program') ? 'text-red-600 bg-red-600/10' : 'text-white hover:bg-white/10 hover:text-white'}`}>Programs</Link>
               <Link to="/modular-centers" onClick={closeMobileMenu} className={`text-sm font-semibold no-underline px-4 py-3 transition-colors duration-300 rounded-lg ${isActive('/modular-centers') ? 'text-red-600 bg-red-600/10' : 'text-white hover:bg-white/10 hover:text-white'}`}>Centers</Link>
               <Link to="/platform" onClick={closeMobileMenu} className={`text-sm font-semibold no-underline px-4 py-3 transition-colors duration-300 rounded-lg ${isActive('/platform') ? 'text-red-600 bg-red-600/10' : 'text-white hover:bg-white/10 hover:text-white'}`}>Platform</Link>

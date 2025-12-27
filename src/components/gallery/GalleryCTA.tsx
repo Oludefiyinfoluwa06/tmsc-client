@@ -1,0 +1,13 @@
+import { ArrowRight } from 'lucide-react';
+
+export default function GalleryCTA() {
+  return (
+    <div className="text-center border-t border-white/10 pt-16 mt-32">
+      <p className="text-white/70 text-lg mb-6">Ready to see our solutions at work?</p>
+      <a href="/contact" className="inline-flex items-center gap-2 px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 no-underline">
+        Schedule a Site Visit
+        <ArrowRight size={18} />
+      </a>
+    </div>
+  );
+}
