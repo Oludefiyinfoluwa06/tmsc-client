@@ -13,7 +13,7 @@ export default function ModularCentersBenefits() {
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Why Partner With Us?</h2>
           <div className="w-16 h-1 bg-linear-to-r from-red-600 via-emerald-400 to-transparent mx-auto"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { title: 'Economic Impact', description: 'Create local jobs and generate sustainable economic activity', Icon: DollarSign },
@@ -25,7 +25,7 @@ export default function ModularCentersBenefits() {
           ].map((benefit, idx) => (
             <div key={idx} className="group relative">
               <div className="absolute inset-0 bg-linear-to-br from-red-600/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-              <div className="relative bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl hover:border-red-600/50 transition-all duration-300 group-hover:-translate-y-2 text-center">
+              <div className="relative bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl hover:border-red-600/50 transition-all duration-300 group-hover:-translate-y-2 text-center flex flex-col items-center">
                 <div className="mb-4"><benefit.Icon className="text-red-400" size={40} /></div>
                 <h3 className="text-white font-semibold mb-3 text-lg">{benefit.title}</h3>
                 <p className="text-white/70 text-sm leading-relaxed">{benefit.description}</p>

@@ -94,7 +94,6 @@ export default function MachineExchange() {
             id: 'machine-exchange-equipment',
             name: 'Industrial Equipment Trading',
             description: 'Access to verified industrial machinery and equipment from trusted suppliers.',
-            price: 'Variable pricing',
             features: [
               'Quality verified equipment',
               'Transparent sourcing',
@@ -106,7 +105,6 @@ export default function MachineExchange() {
             id: 'machine-exchange-financing',
             name: 'Structured Financing Program',
             description: 'Flexible financing solutions tailored to your equipment needs and capacity.',
-            price: 'Custom terms',
             features: [
               'Competitive rates',
               'Flexible repayment',
@@ -118,7 +116,6 @@ export default function MachineExchange() {
             id: 'machine-exchange-mandate',
             name: 'Equipment Sourcing Mandate',
             description: 'Submit your equipment requirements and connect with global suppliers.',
-            price: 'Mandate-based',
             features: [
               'Global supplier network',
               'Expert sourcing',
@@ -138,7 +135,7 @@ export default function MachineExchange() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Source Equipment?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-white mb-8">
               Submit your mandate to access our global network of suppliers and financing options.
             </p>
             <Link

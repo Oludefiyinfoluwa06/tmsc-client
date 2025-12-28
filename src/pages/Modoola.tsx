@@ -94,7 +94,6 @@ export default function Modoola() {
             id: 'modular-center-basic',
             name: 'Basic Modular Center',
             description: 'Entry-level modular industrial center with essential equipment and setup.',
-            price: 'Contact for pricing',
             features: [
               'Standard equipment package',
               'Basic training included',
@@ -106,7 +105,6 @@ export default function Modoola() {
             id: 'modular-center-pro',
             name: 'Professional Modular Center',
             description: 'Advanced modular center with enhanced capabilities and features.',
-            price: 'Contact for pricing',
             features: [
               'Premium equipment package',
               'Comprehensive training',
@@ -118,7 +116,6 @@ export default function Modoola() {
             id: 'modular-center-enterprise',
             name: 'Enterprise Modular Center',
             description: 'Complete enterprise solution with full customization and support.',
-            price: 'Contact for pricing',
             features: [
               'Fully customizable setup',
               'Advanced training program',

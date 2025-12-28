@@ -14,14 +14,11 @@ export default function PartnersCTA() {
         <p className="text-white/80 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
           Let's discuss how we can work together to expand industrial capacity and create opportunity across Africa.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-500 hover:to-red-400 transition-all duration-300 shadow-xl hover:shadow-red-600/50 hover:-translate-y-1" to="/contact">
             Contact Us
             <ArrowRight size={20} />
-          </Link>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white border-2 border-white/30 font-semibold rounded-lg hover:bg-white/20 hover:border-white transition-all duration-300 hover:-translate-y-1" to="/contact">
-            Schedule Call
           </Link>
         </div>
       </div>

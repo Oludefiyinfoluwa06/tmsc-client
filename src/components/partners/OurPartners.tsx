@@ -1,3 +1,16 @@
+import nnpc from '../../assets/partners/nnpc.png'
+import nnpc2 from '../../assets/partners/nnpc2.png'
+import ccnl from '../../assets/partners/ccnl.png'
+import hongniu from '../../assets/partners/hongniu.png'
+import itf from '../../assets/partners/itf.jpeg'
+import naf from '../../assets/partners/naf.png'
+import nigeriapresidentseal from '../../assets/partners/nigeriapresidentseal.png'
+import npa from '../../assets/partners/npa.webp'
+import rif from '../../assets/partners/rif.png'
+import south from '../../assets/partners/south.png'
+
+const partners = [nnpc, ccnl, hongniu, itf, naf, nnpc2, nigeriapresidentseal, npa, rif, south]
+
 export default function OurPartners() {
   return (
     <section className="py-32 bg-black/50 relative overflow-hidden">
@@ -11,10 +24,14 @@ export default function OurPartners() {
           We work with leading organizations across government, industry, and finance to transform African manufacturing.
         </p>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((idx) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {partners.map((partner, idx) => (
             <div key={idx} className="bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl hover:border-red-600/50 transition-all duration-300 flex items-center justify-center h-32 group hover:-translate-y-2">
-              <p className="text-white/50 text-center text-sm">Partner Logo {idx}</p>
+              <img 
+                src={partner} 
+                alt={`Partner ${idx + 1}`}
+                className="h-20 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
           ))}
         </div>
