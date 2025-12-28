@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Settings, Wrench, Zap, Lightbulb, Cpu, Flame, Scissors, Search, Package, Check, FlaskConical } from 'lucide-react';
-import { GalleryHero, AlbumSelector, AlbumGrid, MachineCategories, GalleryCTA, type Album, type MachineCategory } from '../components/gallery';
+import { GalleryHero, AlbumSelector, AlbumGrid, GalleryCTA, type Album } from '../components/gallery';
 import gallery1 from '../assets/gallery/gallery-1.jpeg';
 import gallery2 from '../assets/gallery/gallery-2.jpeg';
 import gallery3 from '../assets/gallery/gallery-3.jpeg';
@@ -34,21 +33,6 @@ const albums: Album[] = [
   }
 ];
 
-const machineCategories: MachineCategory[] = [
-  { id: 'fabrication', name: 'Fabrication Equipment', Icon: Settings, images: [gallery1, gallery2] },
-  { id: 'manufacturing', name: 'Manufacturing Machinery', Icon: Wrench, images: [gallery3, gallery4] },
-  { id: 'processing', name: 'Processing Equipment', Icon: Zap, images: [gallery5, gallery6] },
-  { id: 'laser', name: 'Laser Systems', Icon: Lightbulb, images: [gallery7, gallery8] },
-  { id: 'automation', name: 'Automation Equipment', Icon: Cpu, images: [gallery9, gallery10] },
-  { id: 'welding', name: 'Welding Systems', Icon: Flame, images: [gallery1, gallery3] },
-  { id: 'cutting', name: 'Cutting Machines', Icon: Scissors, images: [gallery2, gallery4] },
-  { id: 'inspection', name: 'Inspection Equipment', Icon: Search, images: [gallery5, gallery7] },
-  { id: 'material-handling', name: 'Material Handling', Icon: Package, images: [gallery6, gallery8] },
-  { id: 'quality-control', name: 'Quality Control', Icon: Check, images: [gallery9, gallery1] },
-  { id: 'test', name: 'Test Equipment', Icon: FlaskConical, images: [gallery2, gallery5] },
-  { id: 'support', name: 'Support Equipment', Icon: Wrench, images: [gallery3, gallery6] }
-];
-
 export default function Gallery() {
   const [selectedAlbum, setSelectedAlbum] = useState(albums[0].id);
   const [searchParams] = useSearchParams();
@@ -77,8 +61,6 @@ export default function Gallery() {
           <AlbumSelector albums={albums} selectedAlbum={selectedAlbum} onSelectAlbum={setSelectedAlbum} />
 
           {currentAlbum && <AlbumGrid album={currentAlbum} />}
-
-          <MachineCategories categories={machineCategories} />
 
           <GalleryCTA />
         </div>

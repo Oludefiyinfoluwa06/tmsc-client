@@ -12,7 +12,7 @@ export default function ModularCentersOverview() {
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">What Are Modular Centers?</h2>
               <div className="w-20 h-1 bg-linear-to-r from-red-600 to-transparent"></div>
             </div>
-            
+
             <p className="text-white/80 text-lg leading-relaxed">
               Industrial Modular Centers are deployable facilities that bring world-class manufacturing and training infrastructure to regional locations. They integrate production equipment, training stations, and support services in one integrated facility.
             </p>

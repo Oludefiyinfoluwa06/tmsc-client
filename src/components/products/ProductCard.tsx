@@ -74,7 +74,7 @@ export default function ProductCard({
           className="w-full py-3 bg-linear-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all flex items-center justify-center gap-2 group/btn"
         >
           <MessageCircle className="w-4 h-4" />
-          Order via WhatsApp
+          Get Price details
         </button>
       </div>
     </div>

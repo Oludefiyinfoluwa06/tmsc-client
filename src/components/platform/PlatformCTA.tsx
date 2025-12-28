@@ -11,12 +11,9 @@ export default function PlatformCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="#" className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center gap-2 group">
-            Join the Waitlist
+          <a href="/contact" className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors flex items-center gap-2 group">
+            Join
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a href="#" className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">
-            Register Now
           </a>
         </div>
       </div>

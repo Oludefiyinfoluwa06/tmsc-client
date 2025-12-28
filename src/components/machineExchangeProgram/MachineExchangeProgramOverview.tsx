@@ -14,14 +14,14 @@ export default function MachineExchangeProgramOverview() {
             </div>
 
             <p className="text-white/80 text-lg leading-relaxed">
-              The Machine Exchange Program connects manufacturers, producers, and enterprises with vetted industrial equipment suppliers. We handle the sourcing, financing, and delivery.
+              The Machine Exchange Program connects manufacturers, producers, and enterprises with vetted industrial equipment suppliers. We handle the sourcing, financing, delivery, and comprehensive operator training to ensure your teams can maximize equipment value.
             </p>
 
             <div className="space-y-5">
               {[
                 { icon: Shield, title: 'Vetted Suppliers', desc: 'Quality OEM equipment from trusted sources' },
                 { icon: TrendingUp, title: 'Flexible Financing', desc: 'Payment options tailored to your business' },
-                { icon: Users, title: 'Technical Support', desc: 'Training and after-sales support included' }
+                { icon: Users, title: 'Operator Training', desc: 'Expert-led training & certification for your teams' }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 items-start group">
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-linear-to-br from-red-600/20 to-red-600/5 border border-red-600/30 flex items-center justify-center group-hover:border-red-600/60 transition-all duration-300">

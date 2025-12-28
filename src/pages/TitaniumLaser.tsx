@@ -91,7 +91,6 @@ export default function TitaniumLaser() {
             id: 'laser-cutting-system',
             name: 'Laser Cutting System',
             description: 'Precision laser cutting machine for metals and non-metals with advanced automation.',
-            price: 'Contact for pricing',
             features: [
               'High-speed cutting',
               'Precision accuracy',
@@ -103,7 +102,6 @@ export default function TitaniumLaser() {
             id: 'laser-welding-system',
             name: 'Laser Welding System',
             description: 'Advanced laser welding technology for strong, clean welds on various materials.',
-            price: 'Contact for pricing',
             features: [
               'High-quality welds',
               'Minimal distortion',
@@ -115,7 +113,6 @@ export default function TitaniumLaser() {
             id: 'laser-marking-system',
             name: 'Laser Marking System',
             description: 'Industrial laser marking and engraving system for product identification.',
-            price: 'Contact for pricing',
             features: [
               'Permanent marking',
               'High-speed operation',
