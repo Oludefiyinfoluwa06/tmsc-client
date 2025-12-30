@@ -63,7 +63,7 @@ export default function Gallery() {
     let mounted = true
     async function load() {
       try {
-        const data: any = await fetchGalleryGroups('MODOOLA')
+        const data: any = await fetchGalleryGroups()
         if (!mounted) return
         // map response to Album[] safely
         const mapped: Album[] = (Array.isArray(data) ? data : []).map((g: any, i: number) => ({
