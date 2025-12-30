@@ -76,7 +76,7 @@
   }
 
   .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-r from-primary/75 to-blue-900/60 z-10;
+    @apply absolute inset-0 bg-linear-to-r from-primary/75 to-blue-900/60 z-10;
   }
 
   .hero-content {
@@ -96,7 +96,7 @@
   }
 
   .hero-content h1 .highlight {
-    @apply bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-black;
+    @apply bg-linear-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-black;
   }
 
   .hero-content .lede {

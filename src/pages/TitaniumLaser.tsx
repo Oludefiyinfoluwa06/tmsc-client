@@ -1,8 +1,44 @@
 import { ArrowRight, Zap, Wrench, Award } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProductGrid } from '../components/products'
+import { useEffect, useState } from 'react'
+import { fetchAllProducts } from '../api'
+import type { ProductCardProps } from '../components/products/ProductCard'
 
 export default function TitaniumLaser() {
+  const [products, setProducts] = useState<ProductCardProps[]>([])
+
+  useEffect(() => {
+    let mounted = true
+    const API_BASE = (import.meta as any).env.VITE_API_BASE_URL || ''
+    const resolveImage = (img?: string) => {
+      if (!img) return undefined
+      return img.startsWith('http') ? img : `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
+    }
+
+    fetchAllProducts()
+      .then((data: any[]) => {
+        if (!mounted) return
+        const slug = 'TITANIUM_LASER'
+        const filtered = (data || []).filter((p: any) => {
+          const s = String(p.slug || p.productType || p.type || '').toUpperCase()
+          return s === slug
+        })
+        const mapped = filtered.map((p: any) => ({
+          id: p._id || p.id || String(p.id || p._id || Math.random()),
+          name: p.title || p.name || 'Product',
+          description: p.description || '',
+          price: p.price ? String(p.price) : undefined,
+          image: resolveImage(Array.isArray(p.images) ? (p.images[0]?.url || p.images[0]) : p.image || p.imageUrl),
+          features: p.features || []
+        }))
+        setProducts(mapped)
+      })
+      .catch(() => { if (mounted) setProducts([]) })
+
+    return () => { mounted = false }
+  }, [])
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -85,42 +121,8 @@ export default function TitaniumLaser() {
       </section>
 
       {/* CTA Section */}
-      <ProductGrid 
-        products={[
-          {
-            id: 'laser-cutting-system',
-            name: 'Laser Cutting System',
-            description: 'Precision laser cutting machine for metals and non-metals with advanced automation.',
-            features: [
-              'High-speed cutting',
-              'Precision accuracy',
-              'Material versatility',
-              'Maintenance included'
-            ]
-          },
-          {
-            id: 'laser-welding-system',
-            name: 'Laser Welding System',
-            description: 'Advanced laser welding technology for strong, clean welds on various materials.',
-            features: [
-              'High-quality welds',
-              'Minimal distortion',
-              'Automation ready',
-              'Training provided'
-            ]
-          },
-          {
-            id: 'laser-marking-system',
-            name: 'Laser Marking System',
-            description: 'Industrial laser marking and engraving system for product identification.',
-            features: [
-              'Permanent marking',
-              'High-speed operation',
-              'Material flexibility',
-              'Lifetime support'
-            ]
-          }
-        ]}
+      <ProductGrid
+        products={products}
         title="Titanium Laser Systems"
         description="Advanced laser technology solutions for your industrial needs"
       />

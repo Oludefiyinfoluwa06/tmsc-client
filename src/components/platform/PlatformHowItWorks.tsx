@@ -16,7 +16,7 @@ export default function PlatformHowItWorks() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { step: '1', title: 'Browse', description: 'Find equipment or machines for sale' },
-            { step: '2', title: 'Connect', description: 'Connect with TMSC via WhatsApp' },
+            { step: '2', title: 'Connect', description: 'Connect with The Machine and Skills Company' },
             { step: '3', title: 'Learn', description: 'Learn how to use purchased equipments and machines' }
           ].map((item, idx) => (
             <div key={item.step} className="relative group">
@@ -34,6 +34,43 @@ export default function PlatformHowItWorks() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Machine Exchange subsection */}
+        <div className="mt-16 max-w-6xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-semibold text-white">Machine Exchange</h3>
+            <p className="text-white/70 mt-2">Acquire, upgrade and learn to operate industrial machinery with our tailored program.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-linear-to-br from-white/5 to-white/3 rounded-2xl p-6 border border-white/10">
+              <h4 className="text-white font-semibold mb-2">1. Buying machines</h4>
+              <p className="text-white/70 text-sm mb-3">Access vetted, new industrial equipment sourced for performance and reliability.</p>
+              <ul className="text-white/70 text-sm space-y-2">
+                <li>Assessment of existing equipment</li>
+                <li>Consultation on suitable upgrades</li>
+              </ul>
+            </div>
+
+            <div className="bg-linear-to-br from-white/5 to-white/3 rounded-2xl p-6 border border-white/10">
+              <h4 className="text-white font-semibold mb-2">2. Upgrading equipment</h4>
+              <p className="text-white/70 text-sm mb-3">Trade in older machines for newer models with tailored upgrade options.</p>
+              <ul className="text-white/70 text-sm space-y-2">
+                <li>Affordable exchange options tailored to individual needs</li>
+                <li>Custom upgrade pathways to fit your operations</li>
+              </ul>
+            </div>
+
+            <div className="bg-linear-to-br from-white/5 to-white/3 rounded-2xl p-6 border border-white/10">
+              <h4 className="text-white font-semibold mb-2">3. Training & maintenance</h4>
+              <p className="text-white/70 text-sm mb-3">Operator training and ongoing maintenance guidance to maximize uptime.</p>
+              <ul className="text-white/70 text-sm space-y-2">
+                <li>Hands-on operator training</li>
+                <li>Maintenance and uptime best practices</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
