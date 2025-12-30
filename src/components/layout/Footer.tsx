@@ -41,14 +41,14 @@ export default function Footer() {
             <div>
               <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-white">Get in Touch</h4>
               <div className="flex flex-col gap-4">
-                <a href="mailto:coco@machineandskills.com" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
+                <Link to="mailto:coco@machineandskills.com" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
                   <Mail size={18} className="shrink-0 mt-0.5" />
                   <span>coco@machineandskills.com</span>
-                </a>
-                <a href="tel:+2349030215252" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
+                </Link>
+                <Link to="tel:+2349030215252" className="flex items-start gap-3 text-white/80 no-underline text-sm transition-all duration-300 hover:text-white">
                   <Phone size={18} className="shrink-0 mt-0.5" />
                   <span>+234 903 021 5252</span>
-                </a>
+                </Link>
                 <div className="flex items-start gap-3 text-white/80 text-sm cursor-default">
                   <MapPin size={18} className="shrink-0 mt-0.5" />
                   <span>3a Rudolf Close, off Katsina-ala crescent, Maitama, Abuja</span>

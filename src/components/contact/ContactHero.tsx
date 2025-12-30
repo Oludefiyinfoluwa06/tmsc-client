@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function ContactHero() {
   return (
@@ -39,17 +40,17 @@ export default function ContactHero() {
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:border-white/40 transition-colors">
             <Mail className="w-6 h-6 text-red-400 mx-auto mb-3" />
             <p className="text-gray-300 text-sm mb-2">Email</p>
-            <a href="mailto:coco@machineandskills.com" className="text-white font-medium hover:text-red-300 transition-colors">
+            <Link to="mailto:coco@machineandskills.com" className="text-white font-medium hover:text-red-300 transition-colors">
               coco@machineandskills.com
-            </a>
+            </Link>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:border-white/40 transition-colors">
             <Phone className="w-6 h-6 text-red-400 mx-auto mb-3" />
             <p className="text-gray-300 text-sm mb-2">Phone</p>
-            <a href="tel:+2349030215252" className="text-white font-medium hover:text-red-300 transition-colors">
+            <Link to="tel:+2349030215252" className="text-white font-medium hover:text-red-300 transition-colors">
               +234 903 021 5252
-            </a>
+            </Link>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:border-white/40 transition-colors">
