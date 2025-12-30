@@ -1,8 +1,44 @@
 import { ArrowRight, TrendingUp, DollarSign, Lock } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProductGrid } from '../components/products'
+import { useEffect, useState } from 'react'
+import { fetchAllProducts } from '../api'
+import type { ProductCardProps } from '../components/products/ProductCard'
 
 export default function MachineExchange() {
+  const [products, setProducts] = useState<ProductCardProps[]>([])
+
+  useEffect(() => {
+    let mounted = true
+    const API_BASE = (import.meta as any).env.VITE_API_BASE_URL || ''
+    const resolveImage = (img?: string) => {
+      if (!img) return undefined
+      return img.startsWith('http') ? img : `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
+    }
+
+    fetchAllProducts()
+      .then((data: any[]) => {
+        if (!mounted) return
+        const slug = 'MACHINE_EXCHANGE'
+        const filtered = (data || []).filter((p: any) => {
+          const s = String(p.slug || p.productType || p.type || '').toUpperCase()
+          return s === slug
+        })
+        const mapped = filtered.map((p: any) => ({
+          id: p._id || p.id || String(p.id || p._id || Math.random()),
+          name: p.title || p.name || 'Product',
+          description: p.description || '',
+          price: p.price ? String(p.price) : undefined,
+          image: resolveImage(Array.isArray(p.images) ? (p.images[0]?.url || p.images[0]) : p.image || p.imageUrl),
+          features: p.features || []
+        }))
+        setProducts(mapped)
+      })
+      .catch(() => { if (mounted) setProducts([]) })
+
+    return () => { mounted = false }
+  }, [])
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -88,42 +124,8 @@ export default function MachineExchange() {
       </section>
 
       {/* CTA Section */}
-      <ProductGrid 
-        products={[
-          {
-            id: 'machine-exchange-equipment',
-            name: 'Industrial Equipment Trading',
-            description: 'Access to verified industrial machinery and equipment from trusted suppliers.',
-            features: [
-              'Quality verified equipment',
-              'Transparent sourcing',
-              'Flexible financing',
-              'Full documentation'
-            ]
-          },
-          {
-            id: 'machine-exchange-financing',
-            name: 'Structured Financing Program',
-            description: 'Flexible financing solutions tailored to your equipment needs and capacity.',
-            features: [
-              'Competitive rates',
-              'Flexible repayment',
-              'Fast approval',
-              'Dedicated support'
-            ]
-          },
-          {
-            id: 'machine-exchange-mandate',
-            name: 'Equipment Sourcing Mandate',
-            description: 'Submit your equipment requirements and connect with global suppliers.',
-            features: [
-              'Global supplier network',
-              'Expert sourcing',
-              'Secure platform',
-              'End-to-end support'
-            ]
-          }
-        ]}
+      <ProductGrid
+        products={products}
         title="Machine Exchange Solutions"
         description="Explore our trading and financing options for your equipment needs"
       />

@@ -146,7 +146,7 @@ export default function ContactForm() {
                 className="px-8 py-3 bg-linear-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all flex items-center justify-center gap-2 group"
               >
                 <MessageCircle className="w-4 h-4" />
-                Send via WhatsApp
+                Submit
               </button>
             </div>
 

@@ -1,8 +1,43 @@
 import { ArrowRight, Building2, Users, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProductGrid } from '../components/products'
+import { useEffect, useState } from 'react'
+import { fetchAllProducts } from '../api'
+import type { ProductCardProps } from '../components/products/ProductCard'
 
 export default function Modoola() {
+  const [products, setProducts] = useState<ProductCardProps[]>([])
+
+  useEffect(() => {
+    let mounted = true
+    const API_BASE = (import.meta as any).env.VITE_API_BASE_URL || ''
+
+    function resolveImage(img: string | undefined) {
+      if (!img) return undefined
+      return img.startsWith('http') ? img : `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
+    }
+
+    fetchAllProducts()
+      .then((data: any[]) => {
+        if (!mounted) return
+        const slug = 'MODOOLA'
+        const filtered = (data || []).filter((p: any) => {
+          const s = String(p.slug || p.productType || p.type || '').toUpperCase()
+          return s === slug
+        })
+        const mapped = filtered.map((p: any) => ({
+          id: p._id || p.id || String(p.id || p._id || Math.random()),
+          name: p.title || p.name || 'Product',
+          description: p.description || '',
+          image: resolveImage(Array.isArray(p.images) ? (p.images[0]?.url || p.images[0]) : p.image || p.imageUrl),
+        }))
+        setProducts(mapped)
+      })
+      .catch(() => { if (mounted) setProducts([]) })
+
+    return () => { mounted = false }
+  }, [])
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -87,43 +122,9 @@ export default function Modoola() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Products (loaded from API) */}
       <ProductGrid
-        products={[
-          {
-            id: 'modular-center-basic',
-            name: 'Basic Modular Center',
-            description: 'Entry-level modular industrial center with essential equipment and setup.',
-            features: [
-              'Standard equipment package',
-              'Basic training included',
-              'Regional deployment',
-              '1-year warranty'
-            ]
-          },
-          {
-            id: 'modular-center-pro',
-            name: 'Professional Modular Center',
-            description: 'Advanced modular center with enhanced capabilities and features.',
-            features: [
-              'Premium equipment package',
-              'Comprehensive training',
-              'Maintenance support',
-              '2-year warranty'
-            ]
-          },
-          {
-            id: 'modular-center-enterprise',
-            name: 'Enterprise Modular Center',
-            description: 'Complete enterprise solution with full customization and support.',
-            features: [
-              'Fully customizable setup',
-              'Advanced training program',
-              'Priority support',
-              '3-year warranty'
-            ]
-          }
-        ]}
+        products={products}
         title="Modular Center Solutions"
         description="Choose the modular center package that fits your manufacturing needs"
       />
