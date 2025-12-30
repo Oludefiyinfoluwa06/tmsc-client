@@ -73,9 +73,8 @@ export default function Gallery() {
           images: (Array.isArray(g.images) && g.images.length) ? g.images : (fallbackAlbums[i]?.images || []),
         }))
         if (mapped.length) setAlbums(mapped)
-      } catch (err) {
+      } catch {
         // keep fallback on error
-        console.error('Failed to load gallery groups', err)
       }
     }
     load()
