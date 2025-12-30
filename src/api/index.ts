@@ -7,9 +7,8 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 })
 
-export async function fetchGalleryGroups(productType = 'MODOOLA') {
-  const res = await api.get('/admin/gallery-groups', { params: { productType } })
-  console.log({ res });
+export async function fetchGalleryGroups() {
+  const res = await api.get('/admin/gallery-groups')
   return res.data
 }
 
