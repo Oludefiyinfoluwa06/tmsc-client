@@ -5,6 +5,7 @@ interface AlbumGridProps {
 }
 
 export default function AlbumGrid({ album }: AlbumGridProps) {
+  console.log({ albumImages: album.images.map(img => `${import.meta.env.VITE_API_BASE_URL}${img.imageUrl}`) });
   return (
     <>
       <div className="mb-12">
@@ -20,7 +21,7 @@ export default function AlbumGrid({ album }: AlbumGridProps) {
             className="group relative overflow-hidden rounded-xl h-80 cursor-pointer"
           >
             <img
-              src={image}
+              src={`${import.meta.env.VITE_API_BASE_URL}${image.imageUrl}`}
               alt={`${album.title} ${idx + 1}`}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
