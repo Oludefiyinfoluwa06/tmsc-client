@@ -8,7 +8,7 @@ const api = axios.create({
 })
 
 export async function fetchGalleryGroups() {
-  const res = await api.get('/admin/gallery-groups')
+  const res = await api.get('/gallery-groups')
   return res.data
 }
 

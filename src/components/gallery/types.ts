@@ -3,7 +3,7 @@ export interface Album {
   id: string;
   title: string;
   description: string;
-  images: string[];
+  images: Record<string, any>[];
 }
 
 export interface MachineCategory {
