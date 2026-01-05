@@ -19,7 +19,7 @@ const pillars = [
       'Regional training hubs'
     ],
     link: '/products/modoola',
-    linkText: 'Request Concept Pack'
+    linkText: 'Read more'
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const pillars = [
       'Volume deployment support'
     ],
     link: '/products/exchange',
-    linkText: 'Submit Mandate'
+    linkText: 'Read more'
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const pillars = [
       'Lifetime technical support'
     ],
     link: '/products/titanium',
-    linkText: 'Explore Solutions'
+    linkText: 'Read more'
   }
 ]
 

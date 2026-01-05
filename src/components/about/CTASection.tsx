@@ -10,8 +10,8 @@ export default function CTASection() {
             Whether you're a government seeking industrialization, an investor looking for returns, an OEM entering Africa, or a local manufacturer scaling up—we have a path for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 no-underline">
-              Book Strategy Call
+            <Link to="/partners" className="px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 no-underline">
+              Partner with us
             </Link>
           </div>
         </div>
