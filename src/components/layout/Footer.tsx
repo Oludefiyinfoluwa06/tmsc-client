@@ -56,23 +56,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          {/* CTA Section */}
-          <div className="py-12 border-t border-white/10">
-            <div className="bg-linear-to-r from-primary/10 to-blue-600/10 border border-white/10 rounded-2xl p-12 text-center">
-              <h3 className="text-2xl font-bold text-white mb-3">Ready to Source Equipment?</h3>
-              <p className="text-white/80 mb-8 max-w-2xl mx-auto">Join our platform to browse machinery, connect with suppliers, and find the perfect equipment for your manufacturing needs.</p>
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:bg-blue-900">
-                  Get in Touch
-                  <ArrowRight size={16} />
-                </Link>
-                <Link to="/platform" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-white/20 hover:border-white/40">
-                  Explore Platform
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

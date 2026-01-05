@@ -18,7 +18,7 @@ export default function CTASection() {
 
           <div className="flex gap-4 justify-center flex-wrap">
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base cursor-pointer bg-red-600 text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-red-700 animate-slide-in-left" to="/contact">
-              Book Strategy Call
+              Partner with us
               <ArrowRight size={18} />
             </Link>
           </div>

@@ -27,4 +27,9 @@ export async function fetchAllProducts() {
   return res.data
 }
 
+export async function fetchCenters() {
+  const res = await api.get('/centers')
+  return res.data
+}
+
 export default api
