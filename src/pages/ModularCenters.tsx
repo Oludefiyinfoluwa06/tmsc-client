@@ -12,10 +12,7 @@ export default function ModularCenters() {
     <>
       <ModularCentersHero />
       <ModularCentersOverview />
-
-      {/* Centers listing with placeholder data for now */}
       <CentersList />
-
       <ModularCenterTypes />
       <ModularCentersBenefits />
       <ModularCentersCTA />
