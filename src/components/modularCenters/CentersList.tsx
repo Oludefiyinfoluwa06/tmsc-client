@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MapPin, Clock, BookOpen, ChevronDown } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import { fetchCenters } from '../../api'
 
 type Center = {
@@ -12,15 +12,20 @@ type Center = {
 }
 
 function resolveImage(img?: string) {
-  const API_BASE = (import.meta as any).env.VITE_API_BASE_URL || ''
+  const API_BASE = import.meta.env.VITE_API_BASE_URL
   if (!img) return undefined
-  return img.startsWith('http') ? img : `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
+  if (img.startsWith('http')) return img
+  // If the backend returned a full path already (e.g. /uploads/...), use it
+  if (img.includes('/upload') || img.includes('/uploads') || img.startsWith('/')) {
+    return `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
+  }
+  // Otherwise assume it's a filename or identifier returned by the upload endpoint
+  return `${API_BASE}/upload/${img}`
 }
 
 export default function CentersList() {
   const [items, setItems] = useState<Center[]>([])
   const [loading, setLoading] = useState(false)
-  const [openIds, setOpenIds] = useState<Set<string>>(new Set())
 
   useEffect(() => {
     let mounted = true
@@ -33,7 +38,9 @@ export default function CentersList() {
           name: c.name || c.title || 'Center',
           location: c.location || '',
           description: c.description || '',
-          imageUrl: resolveImage(c.imageUrl || c.image || (Array.isArray(c.images) ? (c.images[0]?.url || c.images[0]) : undefined)),
+          imageUrl: resolveImage(
+            c.imageUrl || c.image || (Array.isArray(c.images) ? (c.images[0]?.url || c.images[0]) : undefined)
+          ),
           training: c.training || null,
         }))
         setItems(mapped)
@@ -71,17 +78,6 @@ export default function CentersList() {
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="text-xl font-bold text-white leading-snug">{c.name}</h3>
-                  <button onClick={() => {
-                    const newOpenIds = new Set(openIds)
-                    if (newOpenIds.has(c.id)) {
-                      newOpenIds.delete(c.id)
-                    } else {
-                      newOpenIds.add(c.id)
-                    }
-                    setOpenIds(newOpenIds)
-                  }} className="shrink-0 p-1 rounded-lg bg-gray-700/50 hover:bg-red-600/50 text-gray-300 hover:text-white transition-colors">
-                    <ChevronDown size={20} className={`transition-transform duration-300 ${openIds.has(c.id) ? 'rotate-180' : ''}`} />
-                  </button>
                 </div>
 
                 {c.location && (
@@ -93,30 +89,6 @@ export default function CentersList() {
 
                 {c.description && (
                   <p className="text-sm text-gray-300 line-clamp-3 leading-relaxed">{c.description}</p>
-                )}
-
-                {openIds.has(c.id) && (
-                  <div className="mt-5 pt-5 border-t border-gray-700 space-y-4 animate-in fade-in duration-200">
-                    {c.training ? (
-                      <div className="space-y-3 bg-gray-900/50 rounded-lg p-4">
-                        <div className="flex items-center gap-2">
-                          <BookOpen size={18} className="text-red-400 shrink-0" />
-                          <h4 className="text-sm font-bold text-white">{c.training.title || 'Training Program'}</h4>
-                        </div>
-                        {c.training.schedule && (
-                          <div className="flex items-center gap-2 text-gray-300">
-                            <Clock size={16} className="text-red-400 shrink-0" />
-                            <span className="text-sm font-medium">{c.training.schedule}</span>
-                          </div>
-                        )}
-                        {c.training.details && (
-                          <p className="text-sm text-gray-300 leading-relaxed pt-2 border-t border-gray-700">{c.training.details}</p>
-                        )}
-                      </div>
-                    ) : (
-                      <div className="text-sm text-gray-400 italic text-center py-3">No training information available for this center yet.</div>
-                    )}
-                  </div>
                 )}
               </div>
             </article>
