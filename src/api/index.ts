@@ -28,7 +28,7 @@ export async function fetchAllProducts() {
 }
 
 export async function fetchCenters() {
-  const res = await api.get('/centers')
+  const res = await api.get('/modular-centers')
   return res.data
 }
 
