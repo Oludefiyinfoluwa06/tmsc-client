@@ -11,18 +11,6 @@ type Center = {
   training?: { title?: string; schedule?: string; details?: string }
 }
 
-function resolveImage(img?: string) {
-  const API_BASE = import.meta.env.VITE_API_BASE_URL
-  if (!img) return undefined
-  if (img.startsWith('http')) return img
-  // If the backend returned a full path already (e.g. /uploads/...), use it
-  if (img.includes('/upload') || img.includes('/uploads') || img.startsWith('/')) {
-    return `${API_BASE}${img.startsWith('/') ? '' : '/'}${img}`
-  }
-  // Otherwise assume it's a filename or identifier returned by the upload endpoint
-  return `${API_BASE}/upload/${img}`
-}
-
 export default function CentersList() {
   const [items, setItems] = useState<Center[]>([])
   const [loading, setLoading] = useState(false)
@@ -33,16 +21,29 @@ export default function CentersList() {
     .then((data: any[]) => {
         setLoading(true)
         if (!mounted) return
-        const mapped = (data || []).map((c: any) => ({
-          id: c._id || c.id || String(c.id || c._id || Math.random()),
-          name: c.name || c.title || 'Center',
-          location: c.location || '',
-          description: c.description || '',
-          imageUrl: resolveImage(
-            c.imageUrl || c.image || (Array.isArray(c.images) ? (c.images[0]?.url || c.images[0]) : undefined)
-          ),
-          training: c.training || null,
-        }))
+      const mapped = (Array.isArray(data) ? data : []).map((c: any) => {
+          const baseUrl = import.meta.env.VITE_API_BASE_URL.replace(/\/$/, '')
+
+          const rawImageUrl =
+            (Array.isArray(c.images)
+              ? c.images[0]?.imageUrl
+              : undefined)
+
+          const imageUrl = rawImageUrl
+            ? rawImageUrl.startsWith('http')
+              ? rawImageUrl
+              : `${baseUrl}/${rawImageUrl.replace(/^\//, '')}`
+            : undefined
+
+          return {
+            id: c._id || c.id || String(c.id || c._id || Math.random()),
+            name: c.name || c.title || 'Center',
+            location: c.location || '',
+            description: c.description || '',
+            imageUrl,
+          }
+        })
+
         setItems(mapped)
       })
       .catch(() => setItems([]))
