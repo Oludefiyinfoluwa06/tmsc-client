@@ -28,7 +28,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-20 bg-linear-to-b from-white to-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Get in Touch</h2>
