@@ -9,7 +9,7 @@ export default function SystemSection() {
         <div className="text-center mb-16">
           <p className="text-red-600 text-sm font-semibold mb-3">THE SYSTEM</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">How It Works</h2>
-          <p className="text-gray-700 text-lg max-w-2xl mx-auto">Our integrated model connects policy, capital, machinery, and skills in a closed loop.</p>
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">Integrated model connecting policy, capital, machinery, and skills.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -17,17 +17,17 @@ export default function SystemSection() {
             {
               num: "01",
               title: "MODOOLA",
-              desc: "Modular training & industrial centers—deployable, scalable, integrated with local ecosystems."
+              desc: "Deployable modular training and industrial centers."
             },
             {
               num: "02",
               title: "Machine Exchange",
-              desc: "Trading & financing corridor connecting Chinese machinery to African manufacturers at scale."
+              desc: "Trading and financing corridor for machinery."
             },
             {
               num: "03",
               title: "Titanium Laser",
-              desc: "Advanced cutting, welding, and training systems with full after-sales ecosystem."
+              desc: "Advanced cutting, welding, and training systems."
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-red-500/30 transition-all duration-300 group shadow-sm hover:shadow-lg">
@@ -40,7 +40,7 @@ export default function SystemSection() {
 
         <div className="bg-white border border-red-100 rounded-xl p-12 text-center">
           <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
-            These three pillars move in tandem: MODOOLA creates the physical infrastructure, Machine Exchange brings the capital and machinery, and Titanium Laser ensures competitive, world-class capabilities. The result: a complete industrial ecosystem that works.
+            These three pillars work together to create a complete industrial ecosystem.
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function EngagementHighlights() {
         <div className="text-center mb-16">
           <p className="text-red-600 text-sm font-semibold mb-3">EXECUTION TRACK RECORD</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Proven Impact</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">We don't make promises—we deliver results across government mandates, investor portfolios, and on-the-ground deployment.</p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Delivering results through government mandates, investor portfolios, and deployments.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -31,20 +31,20 @@ export default function EngagementHighlights() {
           {/* Key Engagements */}
           {[
             {
-              title: "Nigeria–China Industrial Corridor",
-              desc: "Strategic partnership deploying machinery, training, and investment frameworks across West Africa's manufacturing heartland."
+              title: "Industrial Corridor",
+              desc: "Strategic machinery and training deployment."
             },
             {
-              title: "TVET & Skills Ecosystem",
-              desc: "Partnership with government training institutions to embed laser and machine technologies into formal education."
+              title: "TVET Partnerships",
+              desc: "Embedded in formal education."
             },
             {
-              title: "Modular Industrial Parks",
-              desc: "Greenfield and retrofit deployments of containerized manufacturing centers across industrial hubs."
+              title: "Modular Parks",
+              desc: "Containerized manufacturing centers."
             },
             {
-              title: "International OEM Partnerships",
-              desc: "Direct relationships with Chinese machinery manufacturers and global technology leaders for market entry."
+              title: "OEM Partnerships",
+              desc: "Direct relationships with global leaders."
             }
           ].map((eng, idx) => (
             <div key={idx} className="border-l-4 border-red-600 pl-6 py-4 hover:border-red-500 transition-colors duration-300">

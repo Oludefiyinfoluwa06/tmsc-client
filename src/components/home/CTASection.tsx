@@ -11,14 +11,14 @@ export default function CTASection() {
         <div className="bg-gray-50 border border-gray-100 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden shadow-xl">
           <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -z-10"></div>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Ready to Deploy Capacity?</h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Ready to Scale?</h2>
           <p className="text-gray-600 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
-            From policy to welded steel. Let's discuss your mandate, investment, or partnership. We're here to turn ambitions into industrial reality.
+            Discuss your capacity and investment needs with us.
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base cursor-pointer bg-red-600 text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-red-700 animate-slide-in-left" to="/contact">
-              Partner with us
+              Start Skill Program
               <ArrowRight size={18} />
             </Link>
           </div>

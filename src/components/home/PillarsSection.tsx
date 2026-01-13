@@ -12,42 +12,39 @@ const pillars = [
     number: '01',
     title: 'MODOOLA',
     image: modoolaImg,
-    description: 'Modular industrial & training centers — deployable capacity close to demand.',
+    description: 'Deployable industrial centers.',
     features: [
-      'TVET integration & partnerships',
-      'Industrial park deployment',
+      'TVET partnerships',
       'Regional training hubs'
     ],
     link: '/products/modoola',
-    linkText: 'Read more'
+    linkText: 'Learn more'
   },
   {
     id: 2,
     number: '02',
     title: 'Machine Exchange',
     image: machineExchangeImg,
-    description: 'Machinery trading & financing corridor — connecting suppliers to deployers globally.',
+    description: 'Machinery trading & financing corridor.',
     features: [
-      'Structured financing options',
-      'Vetted OEM suppliers',
-      'Volume deployment support'
+      'Structured financing',
+      'Volume deployment'
     ],
     link: '/products/exchange',
-    linkText: 'Read more'
+    linkText: 'Learn more'
   },
   {
     id: 3,
     number: '03',
     title: 'TITANIUM LASER',
     image: titaniumLaserImg,
-    description: 'Advanced laser machinery with comprehensive training and after-sales ecosystem.',
+    description: 'Advanced laser systems with training.',
     features: [
-      'Cutting, welding, marking, cleaning',
-      'Full operator training program',
-      'Lifetime technical support'
+      'Operator training included',
+      'Technical support'
     ],
     link: '/products/titanium',
-    linkText: 'Read more'
+    linkText: 'Learn more'
   }
 ]
 
@@ -58,8 +55,8 @@ export default function PillarsSection() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">Three Integrated Pillars</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Modular centers, machinery corridors, and laser ecosystems working as one system.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">Three Pillars</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Integrated solutions for industrial capacity.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

@@ -26,13 +26,12 @@ export default function Homepage() {
             <span className="text-red-300 text-xs font-semibold tracking-widest uppercase">Excellence in Industrial Training</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 tracking-tight">Industrial Training and Equipment Exchange Centre</h1>
-          <p className="text-base md:text-lg text-white/90 mb-6 max-w-3xl leading-relaxed font-light">The hub of innovation and skill development — practical training and access to modern machinery for artisans and industry.</p>
-          <p className="text-xs md:text-sm text-white/70 mb-10 font-light tracking-widest uppercase">Hands-on training • Equipment access • Career pathways</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 tracking-tight">Industrial Training & Equipment Exchange</h1>
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-3xl leading-relaxed font-light">Practical training and machinery access for artisans and manufacturers across Africa.</p>
 
           <div className="flex gap-3 flex-wrap mb-8">
-            <Link to="/machine-exchange-program" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-700 transition-all duration-300 hover:shadow-lg hover:shadow-red-600/40 hover:-translate-y-0.5 text-sm">Join Equipment Exchange</Link>
-            <Link to="/about" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-white/15 border border-white/40 transition-all duration-300 hover:bg-white/25 hover:border-white/60 hover:-translate-y-0.5 text-sm">Learn More</Link>
+            <Link to="/machine-exchange-program" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-red-600 transition-all duration-300 hover:shadow-lg hover:shadow-red-600/40 hover:-translate-y-0.5 text-base shadow-lg hover:bg-red-700">Register for Training</Link>
+            <Link to="/about" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white/90 bg-transparent border border-white/40 transition-all duration-300 hover:bg-white/10 hover:border-white/60 hover:-translate-y-0.5 text-sm">View Training Modules</Link>
           </div>
         </div>
       </section>

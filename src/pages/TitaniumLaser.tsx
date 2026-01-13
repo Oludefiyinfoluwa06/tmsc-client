@@ -74,7 +74,7 @@ export default function TitaniumLaser() {
           </h1>
 
           <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            Advanced laser machinery with cutting, welding, marking, and cleaning capabilities plus comprehensive training and lifetime support.
+            Multi-function laser systems with comprehensive training and support.
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -93,18 +93,18 @@ export default function TitaniumLaser() {
             {[
               {
                 icon: Zap,
-                title: 'Multi-Function Capability',
-                description: 'Cutting, welding, marking, and cleaning - all in one advanced laser system.'
+                title: 'Multi-Function',
+                description: 'Cutting, welding, marking, and cleaning.'
               },
               {
                 icon: Wrench,
-                title: 'Full Training Program',
-                description: 'Comprehensive operator training ensuring your team maximizes system capabilities.'
+                title: 'Full Training',
+                description: 'Comprehensive operator certification.'
               },
               {
                 icon: Award,
                 title: 'Lifetime Support',
-                description: 'Dedicated technical support, maintenance, and continuous system optimization.'
+                description: 'Technical support and optimization.'
               }
             ].map((feature, idx) => {
               const Icon = feature.icon
@@ -132,10 +132,10 @@ export default function TitaniumLaser() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Transform Your Production
+              Precision Laser Solutions
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Discover how Titanium Laser systems can elevate your manufacturing capabilities.
+              Advanced cutting, welding, marking, and cleaning capabilities.
             </p>
             <Link
               to="/contact"

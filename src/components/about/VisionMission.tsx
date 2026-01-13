@@ -16,7 +16,7 @@ export default function VisionMission() {
                 <h3 className="text-2xl font-bold text-white">Vision</h3>
               </div>
               <p className="text-white/90 text-lg leading-relaxed">
-                To be the premier hub for industrial machine training and innovation, driving excellence in manufacturing and skill development across industries.
+                Premier hub for industrial training and innovation.
               </p>
             </div>
           </div>
@@ -29,22 +29,22 @@ export default function VisionMission() {
                 <Compass className="text-emerald-400" size={32} />
                 <h3 className="text-2xl font-bold text-white">Mission</h3>
               </div>
-              <ul className="space-y-4 text-white/90">
-                <li className="flex gap-3">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span>To provide world-class training that combines theoretical knowledge with hands-on experience.</span>
+              <ul className="space-y-3 text-white/90 text-sm">
+                <li className="flex gap-2">
+                  <span className="text-emerald-400">•</span>
+                  <span>World-class training combined with hands-on experience.</span>
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span>To foster innovation by equipping artisans with modern fabrication techniques.</span>
+                <li className="flex gap-2">
+                  <span className="text-emerald-400">•</span>
+                  <span>Modern fabrication and innovation.</span>
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span>To support career advancement and industry transformation through skill enhancement.</span>
+                <li className="flex gap-2">
+                  <span className="text-emerald-400">•</span>
+                  <span>Career advancement through skill enhancement.</span>
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span>To cultivate sustainable practices in manufacturing and fabrication.</span>
+                <li className="flex gap-2">
+                  <span className="text-emerald-400">•</span>
+                  <span>Sustainable manufacturing practices.</span>
                 </li>
               </ul>
             </div>

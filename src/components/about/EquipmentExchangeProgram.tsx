@@ -18,7 +18,7 @@ export default function EquipmentExchangeProgram() {
             </div>
 
             <p className="text-white/90 text-lg leading-relaxed">
-              Our Equipment Exchange Program enables artisans and businesses to upgrade their tools and machinery efficiently. By trading in old equipment, participants gain access to modern alternatives, boosting productivity and quality.
+              Trade old equipment for modern alternatives and boost productivity.
             </p>
 
             <div className="space-y-8">
@@ -28,11 +28,11 @@ export default function EquipmentExchangeProgram() {
                   <Wrench className="text-red-400" size={28} />
                   How it Works
                 </h3>
-                <ul className="space-y-4 text-white/80">
+                <ul className="space-y-3 text-white/80">
                   {[
                     'Assessment of existing equipment.',
-                    'Consultation on suitable upgrades.',
-                    'Affordable exchange options tailored to individual needs.'
+                    'Consultation on upgrades.',
+                    'Affordable exchange options.'
                   ].map((item, idx) => (
                     <li key={idx} className="flex gap-4 items-start">
                       <CheckCircle className="text-emerald-400 shrink-0 mt-1" size={20} />
@@ -48,11 +48,11 @@ export default function EquipmentExchangeProgram() {
                   <TrendingUp className="text-emerald-400" size={28} />
                   Benefits
                 </h3>
-                <ul className="space-y-4 text-white/80">
+                <ul className="space-y-3 text-white/80">
                   {[
                     'Access to advanced technology.',
                     'Cost-effective upgrades.',
-                    'Enhanced productivity and output quality.'
+                    'Enhanced productivity and quality.'
                   ].map((item, idx) => (
                     <li key={idx} className="flex gap-4 items-start">
                       <CheckCircle className="text-cyan-400 shrink-0 mt-1" size={20} />
@@ -70,8 +70,8 @@ export default function EquipmentExchangeProgram() {
             <div className="relative bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-12 border border-white/20 backdrop-blur-xl h-96 flex items-center justify-center">
               <div className="text-center space-y-6">
                 <Wrench className="text-red-400 mx-auto" size={64} />
-                <p className="text-white/70 text-lg leading-relaxed">
-                  Transform your operations with modern equipment and expert guidance at every step.
+                <p className="text-white/70 text-base leading-relaxed">
+                  Modern equipment with expert guidance.
                 </p>
               </div>
             </div>
