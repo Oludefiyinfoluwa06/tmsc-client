@@ -35,7 +35,7 @@ export default function GalleryHero() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-          Real industrial capacity, deployed across Africa and beyond. Explore our projects, installations, and equipment catalog.
+          Industrial projects and equipment installations.
         </p>
 
         <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>

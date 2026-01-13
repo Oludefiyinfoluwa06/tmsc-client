@@ -9,7 +9,7 @@ export default function CredibilitySection() {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why We Stand Out</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Delivering measurable impact across every dimension of industrial capacity.</p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Measurable impact across industrial capacity.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

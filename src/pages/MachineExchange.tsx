@@ -74,7 +74,7 @@ export default function MachineExchange() {
           </h1>
 
           <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            The machinery trading and financing corridor connecting global suppliers with African manufacturers at scale.
+            Connect suppliers with manufacturers across Africa.
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -93,18 +93,18 @@ export default function MachineExchange() {
             {[
               {
                 icon: DollarSign,
-                title: 'Structured Financing',
-                description: 'Flexible financing options tailored to manufacturer capacity and growth timelines.'
+                title: 'Flexible Financing',
+                description: 'Tailored to your capacity.'
               },
               {
                 icon: TrendingUp,
                 title: 'Vetted Suppliers',
-                description: 'Partnerships with OEMs and equipment suppliers ensuring quality and reliability.'
+                description: 'Quality and reliability assured.'
               },
               {
                 icon: Lock,
                 title: 'Secure Trading',
-                description: 'Transparent, secure machinery trading platform with full documentation and support.'
+                description: 'Transparent and documented.'
               }
             ].map((feature, idx) => {
               const Icon = feature.icon
@@ -124,7 +124,7 @@ export default function MachineExchange() {
       <ProductGrid
         products={products}
         title="Machine Exchange Solutions"
-        description="Explore our trading and financing options for your equipment needs"
+        description="View our trading and financing options for your equipment needs"
       />
 
       {/* CTA Section */}
@@ -132,10 +132,10 @@ export default function MachineExchange() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Source Equipment?
+              Source Equipment
             </h2>
             <p className="text-xl text-white mb-8">
-              Submit your mandate to access our global network of suppliers and financing options.
+              Access our global network of suppliers and financing.
             </p>
             <Link
               to="/contact"

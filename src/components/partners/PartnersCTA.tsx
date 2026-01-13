@@ -11,14 +11,14 @@ export default function PartnersCTA() {
       
       <div className="max-w-4xl mx-auto px-6 md:px-8 relative z-10 text-center">
         <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Ready to Collaborate?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Let's Partner</h2>
           <p className="text-gray-700 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-            Let's discuss how we can work together to expand industrial capacity and create opportunity across Africa.
+            Expand capacity and create opportunity together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-500 hover:to-red-400 transition-all duration-300 shadow-xl hover:shadow-red-600/50 hover:-translate-y-1" to="/contact">
-              Contact Us
+            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:-translate-y-1" to="/contact">
+              Apply for Training
               <ArrowRight size={20} />
             </Link>
           </div>

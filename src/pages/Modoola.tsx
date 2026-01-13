@@ -73,7 +73,7 @@ export default function Modoola() {
           </h1>
 
           <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            Deployable modular centers that bring industrial capacity and training closer to demand across Africa.
+            Deployable centers bringing capacity closer to demand.
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -93,17 +93,17 @@ export default function Modoola() {
               {
                 icon: Building2,
                 title: 'Modular Design',
-                description: 'Scalable, deployable infrastructure that adapts to local needs and can be rapidly established.'
+                description: 'Scalable and adaptable infrastructure.'
               },
               {
                 icon: Users,
                 title: 'Skills Integration',
-                description: 'TVET partnerships and comprehensive training programs embedded in each center.'
+                description: 'TVET partnerships and training embedded.'
               },
               {
                 icon: MapPin,
                 title: 'Regional Hubs',
-                description: 'Strategic placement across Africa for maximum accessibility and economic impact.'
+                description: 'Strategic placement across Africa.'
               }
             ].map((feature, idx) => {
               const Icon = feature.icon
