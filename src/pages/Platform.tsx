@@ -28,7 +28,7 @@ export default function MachineExchangePlatform() {
         </div>
       </section>
 
-      <section className="py-20 bg-linear-to-b from-white to-gray-50">
+      <section className="py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Key Features</h2>

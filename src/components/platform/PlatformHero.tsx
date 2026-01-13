@@ -18,7 +18,7 @@ export default function PlatformHero() {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10"></div>
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl z-0"></div>
@@ -30,11 +30,11 @@ export default function PlatformHero() {
           <span className="text-red-300 text-sm font-semibold">Digital Marketplace</span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 animate-fade-in-up">
-          Machine Exchange <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-emerald-400 to-cyan-400">Platform</span>
+        <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 animate-fade-in-up text-gray-900">
+          Machine Exchange <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-600 via-emerald-600 to-cyan-600">Platform</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+        <p className="text-lg md:text-xl text-gray-800 mb-12 max-w-2xl leading-relaxed animate-fade-in-up font-medium" style={{animationDelay: '0.1s'}}>
           The digital marketplace connecting equipment suppliers, manufacturers, and enterprises for transparent machine trading.
         </p>
 
@@ -43,7 +43,7 @@ export default function PlatformHero() {
             Join Waitlist
             <ArrowRight size={20} />
           </Link>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-white/10 text-white border-2 border-white/30 transition-all duration-300 hover:bg-white/20 hover:border-white hover:-translate-y-1" to="/contact">
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-gray-100 text-gray-900 border-2 border-gray-200 transition-all duration-300 hover:bg-white hover:border-red-600 hover:-translate-y-1" to="/contact">
             Register Now
           </Link>
         </div>

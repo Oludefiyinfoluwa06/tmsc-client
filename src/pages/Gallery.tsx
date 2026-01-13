@@ -77,7 +77,7 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Content */}
-      <section id="gallery-content" className="w-full py-20 bg-black relative overflow-hidden">
+      <section id="gallery-content" className="w-full py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <AlbumSelector albums={albums} selectedAlbum={selectedAlbum} onSelectAlbum={setSelectedAlbum} />
 
