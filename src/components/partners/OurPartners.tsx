@@ -13,20 +13,20 @@ const partners = [nnpc, ccnl, hongniu, itf, naf, nnpc2, nigeriapresidentseal, np
 
 export default function OurPartners() {
   return (
-    <section className="py-32 bg-black/50 relative overflow-hidden">
-      <div className="absolute inset-0">
+    <section className="py-32 bg-white relative overflow-hidden">
+      {/* <div className="absolute inset-0">
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 relative z-10">
-        <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 text-center">Our Partners</h2>
-        <p className="text-white/70 text-center mb-20 max-w-2xl mx-auto text-lg">
+        <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 text-center">Our Partners</h2>
+        <p className="text-gray-700 text-center mb-20 max-w-2xl mx-auto text-lg">
           We work with leading organizations across government, industry, and finance to transform African manufacturing.
         </p>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {partners.map((partner, idx) => (
-            <div key={idx} className="bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl hover:border-red-600/50 transition-all duration-300 flex items-center justify-center h-32 group hover:-translate-y-2">
+            <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-red-500/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center h-32 group hover:-translate-y-2">
               <img 
                 src={partner} 
                 alt={`Partner ${idx + 1}`}
