@@ -134,7 +134,7 @@ export default function TitaniumLaser() {
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               Transform Your Production
             </h2>
-            <p className="text-xl text-black mb-8">
+            <p className="text-xl text-black mb-8"> 
               Discover how Titanium Laser systems can elevate your manufacturing capabilities.
             </p>
             <Link
