@@ -20,18 +20,18 @@ export default function ProductGrid({
   }[columns] || 'md:grid-cols-3'
 
   return (
-    <section className="py-16 md:py-24 bg-linear-to-b from-slate-900 to-black">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         {(title || description) && (
           <div className="mb-12 text-center">
             {title && (
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
                 {title}
               </h2>
             )}
             {description && (
-              <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              <p className="text-black text-lg max-w-2xl mx-auto">
                 {description}
               </p>
             )}
@@ -47,7 +47,7 @@ export default function ProductGrid({
 
         {products.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-400 text-lg">No products available at the moment.</p>
+            <p className="text-black text-lg">No products available at the moment.</p>
           </div>
         )}
       </div>
