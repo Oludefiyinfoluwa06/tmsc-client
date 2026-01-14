@@ -87,7 +87,7 @@ export default function TitaniumLaser() {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-linear-to-b from-slate-900 to-black">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -109,10 +109,10 @@ export default function TitaniumLaser() {
             ].map((feature, idx) => {
               const Icon = feature.icon
               return (
-                <div key={idx} className="bg-gray-900/50 border border-gray-800 rounded-lg p-8 hover:border-red-500/50 transition-all">
+                <div key={idx} className="bg-gray-50 border border-gray-800 rounded-lg p-8 hover:border-red-500/50 transition-all">
                   <Icon className="w-10 h-10 text-red-400 mb-4" />
-                  <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-black mb-3">{feature.title}</h3>
+                  <p className="text-black">{feature.description}</p>
                 </div>
               )
             })}
@@ -128,7 +128,7 @@ export default function TitaniumLaser() {
       />
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-linear-to-r from-red-900/30 via-red-900/20 to-blue-900/30 border-y border-gray-800">
+      <section className="py-16 md:py-24 bg-white border-y border-gray-800">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
