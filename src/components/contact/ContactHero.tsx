@@ -32,7 +32,7 @@ export default function ContactHero() {
 
         {/* Subheading */}
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Whether you're looking to join our platform, explore partnerships, or have questions about our solutions, we're here to help.
+          Reach out to discuss partnerships and solutions.
         </p>
 
         {/* Quick Contact Info */}

@@ -11,14 +11,14 @@ export default function ModularCentersCTA() {
 
       <div className="max-w-4xl mx-auto px-6 md:px-8 relative z-10 text-center">
         <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Ready to Explore Modular Centers?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Host a Modular Center</h2>
           <p className="text-gray-700 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-            Learn how an Industrial Modular Center can transform your region's manufacturing capacity and create sustainable economic growth.
+            Transform your region's manufacturing capacity.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:-translate-y-1" to="/contact">
-              Host a modular center
+              Register for Training
               <ArrowRight size={20} />
             </Link>
           </div>

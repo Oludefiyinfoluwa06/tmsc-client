@@ -49,16 +49,16 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-          Trade machines, access modular centers, and scale production across Africa through the Machine Exchange Program.
+          Access machinery and scale production across Africa.
         </p>
 
         <div className="flex gap-4 flex-wrap mb-40 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/machine-exchange-program">
-            Explore Program
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-red-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-red-700" to="/machine-exchange-program">
+            Start Skill Program
             <ArrowRight size={20} />
           </Link>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-white/10 text-white border-2 border-white/30 transition-all duration-300 hover:bg-white/20 hover:border-white hover:-translate-y-1" to="/contact">
-            Get Started
+          <Link className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-base bg-transparent text-white border border-white/40 transition-all duration-300 hover:bg-white/10 hover:border-white/60 hover:-translate-y-1" to="/contact">
+            View Curriculum
           </Link>
         </div>
       </div>
