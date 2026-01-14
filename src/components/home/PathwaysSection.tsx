@@ -19,9 +19,9 @@ export default function PathwaysSection() {
               <Building2 size={28} className="text-red-600 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For Governments</h3>
-            <p className="text-white/70 text-sm mb-6 grow">Industrialization, skills development, visible impact, and execution capacity.</p>
-            <span className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group-hover:text-red-500 group-hover:translate-x-1 transition-all">
-              Explore <ArrowRight size={16} />
+            <p className="text-white/70 text-sm mb-6 grow">Industrialization and skills development.</p>
+            <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
+              See Programs <ArrowRight size={16} />
             </span>
           </Link>
 
@@ -31,9 +31,9 @@ export default function PathwaysSection() {
               <TrendingUp size={28} className="text-red-600 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For Investors</h3>
-            <p className="text-white/70 text-sm mb-6 grow">Structured deals, risk-managed portfolios, national programs, and returns.</p>
-            <span className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group-hover:text-red-500 group-hover:translate-x-1 transition-all">
-              Explore <ArrowRight size={16} />
+            <p className="text-white/70 text-sm mb-6 grow">Structured deals and portfolio returns.</p>
+            <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
+              View Programs <ArrowRight size={16} />
             </span>
           </Link>
 
@@ -43,9 +43,9 @@ export default function PathwaysSection() {
               <Factory size={28} className="text-red-600 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For OEMs</h3>
-            <p className="text-white/70 text-sm mb-6 grow">Market entry, trusted deployments, partner ecosystem, and scale.</p>
-            <span className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group-hover:text-red-500 group-hover:translate-x-1 transition-all">
-              Explore <ArrowRight size={16} />
+            <p className="text-white/70 text-sm mb-6 grow">Market entry and trusted deployments.</p>
+            <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
+              View Training Modules <ArrowRight size={16} />
             </span>
           </Link>
 
@@ -55,9 +55,9 @@ export default function PathwaysSection() {
               <Wrench size={28} className="text-red-600 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For Local Industry</h3>
-            <p className="text-white/70 text-sm mb-6 grow">Access to machinery, training programs, and fabrication support.</p>
-            <span className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group-hover:text-red-500 group-hover:translate-x-1 transition-all">
-              Explore <ArrowRight size={16} />
+            <p className="text-white/70 text-sm mb-6 grow">Machinery access and training programs.</p>
+            <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
+              View Curriculum <ArrowRight size={16} />
             </span>
           </Link>
         </div>
