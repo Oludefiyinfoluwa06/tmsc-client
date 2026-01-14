@@ -131,10 +131,10 @@ export default function MachineExchange() {
       <section className="py-16 md:py-24 bg-white border-y border-gray-800">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               Source Equipment
             </h2>
-            <p className="text-xl text-white mb-8">
+            <p className="text-xl text-black mb-8">
               Access our global network of suppliers and financing.
             </p>
             <Link
