@@ -25,53 +25,37 @@ export default function About() {
             <span className="text-red-300 text-xs font-semibold tracking-widest uppercase">Our Story</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">About Us</h1>
-          <h2 className="text-base md:text-lg text-red-300 font-light mb-6 tracking-wider">Empowering Artisans, Transforming Industries</h2>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-tight">About Machine & Skills</h1>
 
-          <p className="text-white/90 text-base mb-4 leading-relaxed font-light max-w-3xl">The Machine and Skills Company Ltd is a trailblazer in industrial machine training, dedicated to reshaping the manufacturing sector with innovative solutions and unparalleled expertise. As pioneers in modern fabrication techniques, we are committed to equipping artisans with cutting-edge skills to thrive in today's dynamic industrial landscape.</p>
+          <div className="space-y-6">
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The Machine and Skills Company Ltd builds modular training centres that function as working factories.</p>
 
-          <p className="text-white/90 text-base leading-relaxed font-light max-w-3xl">Our mission is to bridge the gap between traditional craftsmanship and advanced technology, fostering a new era of industry innovation. With comprehensive training programs and state-of-the-art technologies, we empower individuals and organizations to excel, unlocking endless possibilities for growth and success.</p>
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">Each centre combines industrial-grade machines with structured training, so people learn by producing real outputs, not only through classroom simulation.</p>
+
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The same centre design, machine logic, and operating model are deployed repeatedly across locations.</p>
+
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">We focus on standardisation, execution, and outcomes that are repeatable and consistent.</p>
+          </div>
         </div>
       </section>
 
       <section className="py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">Why Choose TMSC?</h2>
-            <p className="text-gray-600 text-lg">Industry-leading training and equipment solutions</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">State-of-the-Art Equipment</h4>
-              <p className="text-gray-700 leading-relaxed">Our training centers are equipped with modern tools and machines that replicate real-world industrial environments.</p>
-            </div>
-
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">Expert Trainers</h4>
-              <p className="text-gray-700 leading-relaxed">Learn from seasoned professionals with years of experience in industrial fabrication and machine operation.</p>
-            </div>
-
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">Hands-On Learning</h4>
-              <p className="text-gray-700 leading-relaxed">Practical sessions make up a significant portion of our programs, ensuring skills are immediately applicable.</p>
-            </div>
-
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">Industry Partnerships</h4>
-              <p className="text-gray-700 leading-relaxed">We collaborate with leading manufacturers and organizations to provide opportunities for internships and placements.</p>
-            </div>
-
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">Global Standards</h4>
-              <p className="text-gray-700 leading-relaxed">Our training and methodologies align with international best practices, ensuring global relevance and competitiveness.</p>
-            </div>
-
-            <div className="group p-6 bg-white border border-gray-200 rounded-lg hover:border-red-500/30 hover:shadow-lg transition-all duration-300">
-              <h4 className="text-red-600 font-bold text-lg mb-3">Career Pathways</h4>
-              <p className="text-gray-700 leading-relaxed">Structured pathways for career advancement through continued training and skill development.</p>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
+          
+          <ul className="space-y-6">
+            {[
+              "We design and deploy standardised modular skills-and-production centres.",
+              "We integrate industrial-grade machines into live training environments.",
+              "We operate each centre as a functional production facility, not a simulation.",
+              "Our work is focused on deployment, repeatability, and execution at scale."
+            ].map((bullet, idx) => (
+              <li key={idx} className="flex items-start gap-4">
+                <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                <p className="text-gray-700 text-lg leading-relaxed">{bullet}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
