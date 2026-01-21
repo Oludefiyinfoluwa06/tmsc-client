@@ -40,22 +40,26 @@ export default function About() {
       </section>
 
       <section className="py-32 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
-          
-          <ul className="space-y-6">
-            {[
-              "We design and deploy standardised modular skills-and-production centres.",
-              "We integrate industrial-grade machines into live training environments.",
-              "We operate each centre as a functional production facility, not a simulation.",
-              "Our work is focused on deployment, repeatability, and execution at scale."
-            ].map((bullet, idx) => (
-              <li key={idx} className="flex items-start gap-4">
-                <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
-                <p className="text-gray-700 text-lg leading-relaxed">{bullet}</p>
-              </li>
-            ))}
-          </ul>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
+
+              <ul className="space-y-6">
+                {[
+                  "We design and deploy standardised modular skills-and-production centres.",
+                  "We integrate industrial-grade machines into live training environments.",
+                  "We operate each centre as a functional production facility, not a simulation.",
+                  "Our work is focused on deployment, repeatability, and execution at scale."
+                ].map((bullet, idx) => (
+                  <li key={idx} className="flex items-start gap-4">
+                    <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                    <p className="text-gray-700 text-lg leading-relaxed">{bullet}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

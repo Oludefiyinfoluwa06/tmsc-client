@@ -6,7 +6,7 @@ export default function SystemSection() {
       </div> */}
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
+        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">How the Model Works</h2>
           <div className="max-w-4xl mx-auto space-y-6 text-gray-700 text-lg md:text-xl leading-relaxed">
             <p>Machine & Skills centers are designed around a standardized, production-led model.</p>
