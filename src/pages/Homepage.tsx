@@ -1,6 +1,9 @@
 import PillarsSection from '../components/home/PillarsSection'
 import CredibilitySection from '../components/home/CredibilitySection'
 import CTASection from '../components/home/CTASection'
+import Standardization from '../components/home/Standardization'
+import AnchorStatement from '../components/common/AnchorStatement'
+import Engagement from '../components/common/Engagement'
 import { Link } from 'react-router-dom'
 
 export default function Homepage() {
@@ -37,6 +40,9 @@ Our focus is simple: shorten the gap between equipment, training, and real econo
       <PillarsSection />
       <CredibilitySection />
       <CTASection />
+      <Standardization />
+      <AnchorStatement />
+      <Engagement />
     </div>
   )
 }
