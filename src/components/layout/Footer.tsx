@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-gray-900">Get in Touch</h4>
+              <h4 className="text-sm font-bold mb-6 uppercase tracking-wider text-gray-900">Contact</h4>
               <div className="flex flex-col gap-4">
                 <Link to="mailto:coco@machineandskills.com" className="flex items-start gap-3 text-gray-600 no-underline text-sm transition-all duration-300 hover:text-primary">
                   <Mail size={18} className="shrink-0 mt-0.5" />
