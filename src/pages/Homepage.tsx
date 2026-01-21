@@ -1,6 +1,9 @@
 import PillarsSection from '../components/home/PillarsSection'
 import CredibilitySection from '../components/home/CredibilitySection'
 import CTASection from '../components/home/CTASection'
+import Standardization from '../components/home/Standardization'
+import AnchorStatement from '../components/common/AnchorStatement'
+import Engagement from '../components/common/Engagement'
 import { Link } from 'react-router-dom'
 
 export default function Homepage() {
@@ -23,9 +26,7 @@ export default function Homepage() {
 
         <div className="relative z-20 w-full mx-auto px-6 md:px-12 text-left pt-20 max-w-5xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 tracking-tight">Modular Industrial Training & Production Platforms</h1>
-          <p className="text-base md:text-lg text-white/90 mb-8 max-w-3xl leading-relaxed font-light">Machine & Skills designs, deploys, and operates modular industrial training and production centers.
-We work with governments, institutions, and private operators to turn machines into practical, job-ready skills.
-Our focus is simple: shorten the gap between equipment, training, and real economic output.</p>
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-3xl leading-relaxed font-light">Machine & Skills designs, deploys, and operates modular industrial training and production centers. We work with governments, institutions, and private operators to turn machines into practical, job-ready skills. Our focus is simple: shorten the gap between equipment, training, and real economic output.</p>
 
           <div className="flex gap-3 flex-wrap mb-8">
             <Link to="/machine-exchange-program" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-red-600 transition-all duration-300 hover:shadow-lg hover:shadow-red-600/40 hover:-translate-y-0.5 text-base shadow-lg hover:bg-red-700">Use a Centre</Link>
@@ -37,6 +38,9 @@ Our focus is simple: shorten the gap between equipment, training, and real econo
       <PillarsSection />
       <CredibilitySection />
       <CTASection />
+      <Standardization />
+      <AnchorStatement />
+      <Engagement />
     </div>
   )
 }

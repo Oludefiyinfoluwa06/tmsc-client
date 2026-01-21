@@ -14,10 +14,10 @@ export default function AlbumSelector({ albums, selectedAlbum, onSelectAlbum }: 
           <button
             key={album.id}
             onClick={() => onSelectAlbum(album.id)}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 no-underline cursor-pointer border ${
+            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 no-underline cursor-pointer border border-2 ${
               selectedAlbum === album.id
                 ? 'bg-red-600 text-white border-red-600'
-                : 'bg-transparent text-white border-white/30 hover:border-white/50'
+                : 'bg-transparent text-black border-white/30 hover:border-white/50'
             }`}
           >
             {album.title}

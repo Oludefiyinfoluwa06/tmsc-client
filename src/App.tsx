@@ -12,11 +12,13 @@ import Partners from './pages/Partners'
 import Modoola from './pages/Modoola'
 import MachineExchange from './pages/MachineExchange'
 import TitaniumLaser from './pages/TitaniumLaser'
+import ScrollToTop from './components/layout/ScrollTop'
 
 function AppLayout() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      <ScrollToTop />
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Homepage />} />
