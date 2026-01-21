@@ -39,23 +39,30 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
-          
-          <ul className="space-y-6">
-            {[
-              "We design and deploy standardised modular skills-and-production centres.",
-              "We integrate industrial-grade machines into live training environments.",
-              "We operate each centre as a functional production facility, not a simulation.",
-              "Our work is focused on deployment, repeatability, and execution at scale."
-            ].map((bullet, idx) => (
-              <li key={idx} className="flex items-start gap-4">
-                <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
-                <p className="text-gray-700 text-lg leading-relaxed">{bullet}</p>
-              </li>
-            ))}
-          </ul>
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl -z-10"></div>
+
+        <div className="max-w-5xl mx-auto px-6 md:px-8">
+          <div className="bg-gray-50 border border-gray-100 rounded-3xl p-12 md:p-16 relative overflow-hidden shadow-xl">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -z-10"></div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">What We Do</h2>
+            
+            <ul className="space-y-6">
+              {[
+                "We design and deploy standardised modular skills-and-production centres.",
+                "We integrate industrial-grade machines into live training environments.",
+                "We operate each centre as a functional production facility, not a simulation.",
+                "Our work is focused on deployment, repeatability, and execution at scale."
+              ].map((bullet, idx) => (
+                <li key={idx} className="flex items-start gap-4">
+                  <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed">{bullet}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
