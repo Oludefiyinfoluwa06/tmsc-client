@@ -43,7 +43,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
+              <h2 className="text-4xl md:text-4xl font-bold mb-12 text-center">What We Do</h2>
 
               <ul className="space-y-6">
                 {[
