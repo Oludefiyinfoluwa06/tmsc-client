@@ -18,7 +18,7 @@ export default function PartnersCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:-translate-y-1" to="/contact">
-              Apply for Training
+             Use a Center for Training
               <ArrowRight size={20} />
             </Link>
           </div>
