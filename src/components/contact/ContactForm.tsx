@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { CheckCircle } from 'lucide-react'
+import { useState } from 'react'
 import { sendWhatsAppMessage } from '../../utils/whatsapp'
 
 
@@ -53,6 +53,9 @@ export default function ContactForm() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
             Centre Use & Deployment Enquiry
           </h2>
+          <p className="text-gray-600 mb-8">
+            This form helps us understand your use case so we can guide the right next step.
+          </p>
 
           {/* Contact Form */}
           {!submitted && (
