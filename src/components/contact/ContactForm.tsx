@@ -51,11 +51,8 @@ export default function ContactForm() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-10 shadow-sm">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            Send us a Message
+            Centre Use & Deployment Enquiry
           </h2>
-          <p className="text-gray-600 mb-8">
-            Fill out the form below and we'll get back to you within 24 hours.
-          </p>
 
           {/* Contact Form */}
           {!submitted && (
