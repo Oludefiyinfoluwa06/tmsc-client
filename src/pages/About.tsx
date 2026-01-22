@@ -1,4 +1,3 @@
-import EngagementHighlights from '../components/about/EngagementHighlights';
 import SystemSection from '../components/about/SystemSection';
 import CTASection from '../components/about/CTASection';
 
@@ -63,7 +62,7 @@ export default function About() {
         </div>
       </section>
 
-      <EngagementHighlights />
+      {/* <EngagementHighlights /> */}
       <SystemSection />
       <CTASection />
     </>

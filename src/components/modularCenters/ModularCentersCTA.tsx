@@ -11,7 +11,7 @@ export default function ModularCentersCTA() {
 
       <div className="max-w-4xl mx-auto px-6 md:px-8 relative z-10 text-center">
         <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Host a Modular Center</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Use a center</h2>
           <p className="text-gray-700 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
             Transform your region's manufacturing capacity.
           </p>

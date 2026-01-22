@@ -1,19 +1,21 @@
 import { useState } from 'react'
-import { CheckCircle, MessageCircle } from 'lucide-react'
-import { sendWhatsAppMessage, craftContactMessage } from '../../utils/whatsapp'
+import { CheckCircle } from 'lucide-react'
+import { sendWhatsAppMessage } from '../../utils/whatsapp'
 
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     fullName: '',
+    company: '', // optional
+    intendedUse: '',
+    location: '',
+    description: '',
     email: '',
     phone: '',
-    company: '',
-    message: '',
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -24,23 +26,24 @@ export default function ContactForm() {
   const handleSendViaWhatsApp = (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!formData.fullName || !formData.phone || !formData.message) {
-      alert('Please fill in Name, Phone, and Message fields')
+    // basic validation: require name, intended use, location, description, and at least one contact
+    if (!formData.fullName || !formData.intendedUse || !formData.location || !formData.description) {
+      alert('Please complete Full Name, Intended use, Location, and Brief description.')
       return
     }
 
-    const whatsappMessage = craftContactMessage(
-      formData.fullName,
-      formData.company,
-      formData.email,
-      formData.phone,
-      formData.message
-    )
+    if (!formData.email && !formData.phone) {
+      alert('Please provide at least an Email Address or Phone Number.')
+      return
+    }
 
-    sendWhatsAppMessage({
-      message: whatsappMessage
-    })
-    setSubmitted(true);
+    const whatsappMessage = `Enquiry from website:\n\nFull Name: ${formData.fullName}\nOrganisation / Company: ${formData.company || 'N/A'}\nIntended use: ${formData.intendedUse}\nLocation: ${formData.location}\n\nBrief description:\n${formData.description}\n\nContact details:\nEmail: ${formData.email || 'N/A'}\nPhone: ${formData.phone || 'N/A'}`
+
+    // show success message first, then open WhatsApp after at least 1 second
+    setSubmitted(true)
+    setTimeout(() => {
+      sendWhatsAppMessage({ message: whatsappMessage })
+    }, 1000)
   }
 
   return (
@@ -60,87 +63,103 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Full Name */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Full Name <span className="text-red-600">*</span>
-                  </label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Full Name <span className="text-red-600">*</span></label>
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
-                    placeholder="Your name"
+                    placeholder="Full Name"
                   />
                 </div>
 
-                {/* Email */}
+                {/* Organisation / Company (optional) */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Email <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                {/* Phone */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Phone <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
-                    placeholder="+234 812 345 6789"
-                  />
-                </div>
-
-                {/* Company */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Company <span className="text-red-600">*</span>
-                  </label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Organisation / Company <span className="text-gray-500">(optional)</span></label>
                   <input
                     type="text"
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
-                    placeholder="Your company"
+                    placeholder="Organisation / Company"
+                  />
+                </div>
+
+                {/* Intended use dropdown */}
+                <div>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Intended use of a Machine & Skills centre <span className="text-red-600">*</span></label>
+                  <select
+                    name="intendedUse"
+                    value={formData.intendedUse}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="Production work and skills use">Production work and skills use</option>
+                    <option value="Training linked to real production">Training linked to real production</option>
+                    <option value="Institutional or government deployment">Institutional or government deployment</option>
+                    <option value="Exploring centre sponsorship or partnership">Exploring centre sponsorship or partnership</option>
+                  </select>
+                </div>
+
+                {/* Location */}
+                <div>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Location <span className="text-red-600">*</span></label>
+                  <input
+                    type="text"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    placeholder="City / State"
                   />
                 </div>
               </div>
 
-              {/* Message */}
+              {/* Brief description */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">
-                  Message <span className="text-red-600">*</span>
-                </label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Brief description <span className="text-red-600">*</span></label>
                 <textarea
-                  name="message"
-                  value={formData.message}
+                  name="description"
+                  value={formData.description}
                   onChange={handleInputChange}
-                  required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all resize-none"
-                  placeholder="Tell us more about your needs..."
+                  placeholder="In a few sentences, describe what you want to do."
                 />
               </div>
 
+              {/* Contact details */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    placeholder="Email Address"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
               <p className="text-gray-600 text-sm">
-                <span className="text-red-600">*</span> Required fields. We respect your privacy and will only contact you regarding your inquiry.
+                <span className="text-red-600">*</span> Required fields. We respect your privacy and will only contact you regarding your enquiry.
               </p>
 
               {/* Submit Button */}
@@ -150,8 +169,7 @@ export default function ContactForm() {
                   type="button"
                   className="px-8 py-3 bg-linear-to-r from-red-600 to-red-700 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
                 >
-                  <MessageCircle className="w-4 h-4" />
-                  Send Message
+                  Submit Enquiry
                 </button>
               </div>
             </form>
@@ -163,7 +181,7 @@ export default function ContactForm() {
               <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-green-900 mb-2">Thank You!</h3>
               <p className="text-green-800 mb-4">
-                Your message has been received. Our team will get back to you within 24 hours.
+                Thank you. We will review your enquiry and respond with the appropriate next step.
               </p>
               <button
                 onClick={() => window.location.reload()}
