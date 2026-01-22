@@ -9,7 +9,7 @@ export default function Engagement() {
 
         <div className="flex items-center justify-center gap-3 flex-wrap">
           <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-red-600 hover:bg-red-700 transition">Discuss Deployment</Link>
-          <Link to="/training" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 transition">Access Training & Use</Link>
+          <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 transition">Access Training & Use</Link>
         </div>
       </div>
     </section>

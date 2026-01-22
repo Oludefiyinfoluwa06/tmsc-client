@@ -7,7 +7,6 @@ import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
 import MachineExchangeProgram from './pages/MachineExchangeProgram'
 import ModularCenters from './pages/ModularCenters'
-import Platform from './pages/Platform'
 import Partners from './pages/Partners'
 import Modoola from './pages/Modoola'
 import MachineExchange from './pages/MachineExchange'
@@ -24,7 +23,7 @@ function AppLayout() {
           <Route path="/" element={<Homepage />} />
           <Route path="/machine-exchange-program" element={<MachineExchangeProgram />} />
           <Route path="/modular-centers" element={<ModularCenters />} />
-          <Route path="/platform" element={<Platform />} />
+          {/* <Route path="/platform" element={<Platform />} /> */}
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<About />} />
