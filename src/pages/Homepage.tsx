@@ -1,5 +1,4 @@
 import PillarsSection from '../components/home/PillarsSection'
-import CTASection from '../components/home/CTASection'
 import Standardization from '../components/home/Standardization'
 import AnchorStatement from '../components/common/AnchorStatement'
 import Engagement from '../components/common/Engagement'
@@ -36,7 +35,7 @@ export default function Homepage() {
 
       <PillarsSection />
       {/* <CredibilitySection /> */}
-      <CTASection />
+      {/* <CTASection /> */}
       <Standardization />
       <AnchorStatement />
       <Engagement />
