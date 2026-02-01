@@ -53,7 +53,7 @@ export default function CentersList() {
   }, [])
 
   if (loading) return <div className="py-16 text-center text-gray-400 text-lg">Loading nodes...</div>
-  if (items.length === 0) return <div className="py-16 text-center text-gray-400 text-lg">No nodes available.</div>
+  if (items.length === 0) return <div className="py-16 text-center text-gray-400 text-lg"></div>
 
   return (
     <section className="py-20 bg-linear-to-b from-slate-900 to-black">
