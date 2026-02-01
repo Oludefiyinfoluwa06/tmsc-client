@@ -8,7 +8,6 @@ export default function ModularCentersOverview() {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-red-600 text-sm font-semibold uppercase tracking-widest mb-3">About Us</p>
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">What Are Digital Production Nodes?</h2>
               <div className="w-20 h-1 bg-linear-to-r from-red-600 to-red-600/20"></div>
             </div>
