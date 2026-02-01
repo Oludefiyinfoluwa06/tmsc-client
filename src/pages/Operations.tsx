@@ -1,6 +1,5 @@
 import {
   ModularCentersHero,
-  ModularCentersOverview,
   ModularCenterTypes,
   ModularCentersBenefits,
   ModularCentersCTA
