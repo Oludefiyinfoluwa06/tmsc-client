@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Factory, Zap, Cog, TrendingUp, Globe } from 'lucide-react'
+import { ArrowRight, Factory, Zap, Cog, TrendingUp, Globe, CheckCircle, Building2, Users } from 'lucide-react'
 
 export default function DigitalProductionNodes() {
   return (
