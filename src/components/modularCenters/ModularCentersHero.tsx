@@ -31,11 +31,11 @@ export default function ModularCentersHero() {
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
-          Digital Production Nodes
+          Operations
         </h1>
 
         <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-          Commissioned industrial infrastructure, delivered through modular architecture.
+          A modular production system that delivers immediate, monitored output while embedding skills transfer directly into real-world industrial operations.
         </p>
 
         <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
