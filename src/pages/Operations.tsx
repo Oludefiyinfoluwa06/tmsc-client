@@ -1,11 +1,12 @@
 import {
   ModularCentersHero,
-  ModularCentersOverview,
   ModularCenterTypes,
   ModularCentersBenefits,
   ModularCentersCTA
 } from '../components/modularCenters'
 import CentersList from '../components/modularCenters/CentersList'
+import { ArrowRight, Zap, Cog, TrendingUp, Globe } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function Operations() {
   return (
