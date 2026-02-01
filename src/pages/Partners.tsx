@@ -12,7 +12,7 @@ export default function Partners() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -24,7 +24,7 @@ export default function Partners() {
           </div>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Our Partners</h1>
-          <p className="text-white/90 text-base leading-relaxed font-light max-w-3xl">Industry leaders and training collaborators who support our mission to transform artisanal and industrial sectors.</p>
+          <p className="text-white/90 text-base leading-relaxed font-light max-w-3xl">Industry leaders and collaborators who support our mission to transform artisanal and industrial sectors.</p>
         </div>
       </section>
 

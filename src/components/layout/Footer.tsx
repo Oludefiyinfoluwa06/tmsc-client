@@ -16,7 +16,7 @@ export default function Footer() {
               <h4 className="text-sm font-semibold mb-3">About</h4>
               <ul className="space-y-2">
                 <li><Link to="/about" className="text-gray-600 hover:text-gray-900">About</Link></li>
-                <li><Link to="/modular-centers" className="text-gray-600 hover:text-gray-900">Centres</Link></li>
+                <li><Link to="/digital-production-nodes" className="text-gray-600 hover:text-gray-900">Digital Production Nodes</Link></li>
                 <li><Link to="/partners" className="text-gray-600 hover:text-gray-900">Partners</Link></li>
                 <li><Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
               </ul>

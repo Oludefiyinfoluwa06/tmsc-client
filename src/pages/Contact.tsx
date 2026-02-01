@@ -12,7 +12,7 @@ export default function Contact() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Contact Us</h1>
-          <p className="text-white/90 mb-6 text-base leading-relaxed font-light max-w-3xl">Questions? Interested in training, equipment exchange, or consultancy? Get in touch and we'll respond promptly.</p>
+          <p className="text-white/90 mb-6 text-base leading-relaxed font-light max-w-3xl">Questions? Interested in equipment exchange, deployments, or consultancy? Get in touch and we'll respond promptly.</p>
         </div>
       </section>
 

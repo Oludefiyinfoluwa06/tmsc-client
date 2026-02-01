@@ -52,15 +52,15 @@ export default function CentersList() {
     return () => { mounted = false }
   }, [])
 
-  if (loading) return <div className="py-16 text-center text-gray-400 text-lg">Loading centers...</div>
-  if (items.length === 0) return <div className="py-16 text-center text-gray-400 text-lg">No centers available.</div>
+  if (loading) return <div className="py-16 text-center text-gray-400 text-lg">Loading nodes...</div>
+  if (items.length === 0) return <div className="py-16 text-center text-gray-400 text-lg">No nodes available.</div>
 
   return (
     <section className="py-20 bg-linear-to-b from-slate-900 to-black">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Modular Centers</h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">Explore our deployable training and production facilities across Africa</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Digital Production Nodes</h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">Explore our deployable production infrastructure across Africa</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((c) => (

@@ -74,12 +74,12 @@ export default function TitaniumLaser() {
           </h1>
 
           <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            Multi-function laser systems with comprehensive training and support.
+            Multi-function laser systems with comprehensive support.
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/contact">
-              Use a center
+              Contact
               <ArrowRight size={20} />
             </Link>
           </div>
@@ -98,8 +98,8 @@ export default function TitaniumLaser() {
               },
               {
                 icon: Wrench,
-                title: 'Full Training',
-                description: 'Comprehensive operator certification.'
+                title: 'Operator Enablement',
+                description: 'Enablement through live production workflows.'
               },
               {
                 icon: Award,
@@ -141,7 +141,7 @@ export default function TitaniumLaser() {
               to="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-linear-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-700 hover:to-red-600 transition-all"
             >
-              Use a center
+              Contact
               <ArrowRight size={20} />
             </Link>
           </div>

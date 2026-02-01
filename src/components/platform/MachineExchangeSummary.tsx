@@ -7,7 +7,7 @@ export default function MachineExchangeSummary() {
         <div className="flex items-start gap-4 mb-6">
           <Wrench className="w-10 h-10 text-red-600" />
           <div>
-            <h3 className="text-2xl font-semibold">Machine Exchange — In a nutshell</h3>
+            <h3 className="text-2xl font-semibold">Machine Exchange - In a nutshell</h3>
             <p className="text-gray-600">Our Machine Exchange program helps you acquire, upgrade and operate industrial machinery.</p>
           </div>
         </div>
@@ -20,12 +20,12 @@ export default function MachineExchangeSummary() {
 
           <li className="bg-gray-50 p-6 rounded-lg border border-gray-100">
             <h4 className="font-semibold text-gray-900 mb-2">2. Upgrading equipment</h4>
-            <p className="text-gray-400 text-sm text-gray-600">Trade in older machines for newer models with tailored upgrade options.</p>
+            <p className="text-sm text-gray-600">Trade in older machines for newer models with tailored upgrade options.</p>
           </li>
 
           <li className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-            <h4 className="font-semibold text-gray-900 mb-2">3. Training & maintenance</h4>
-            <p className="text-gray-600 text-sm">Receive operator training and ongoing maintenance guidance to maximize uptime.</p>
+            <h4 className="font-semibold text-gray-900 mb-2">3. Enablement & maintenance</h4>
+            <p className="text-gray-600 text-sm">Receive operator enablement and ongoing maintenance guidance to maximize uptime.</p>
           </li>
         </ul>
       </div>

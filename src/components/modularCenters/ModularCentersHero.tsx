@@ -31,16 +31,16 @@ export default function ModularCentersHero() {
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
-          Industrial Modular <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-emerald-400 to-cyan-400">Centers</span>
+          Digital Production Nodes
         </h1>
 
         <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-          Deployable industrial and training facilities that bring manufacturing capacity closer to demand across Africa.
+          Commissioned industrial infrastructure, delivered through modular architecture.
         </p>
 
         <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/contact">
-            Use a center
+            Contact
             <ArrowRight size={20} />
           </Link>
         </div>

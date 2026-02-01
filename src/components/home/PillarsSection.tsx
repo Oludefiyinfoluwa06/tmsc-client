@@ -12,10 +12,10 @@ const pillars = [
     number: '01',
     title: 'MODOOLA',
     image: modoolaImg,
-    description: 'Deployable industrial centers.',
+    description: 'Deployable production infrastructure.',
     features: [
       'TVET partnerships',
-      'Regional training hubs'
+      'Regional skills hubs'
     ],
     link: '/products/modoola',
     linkText: 'Learn more'
@@ -38,9 +38,9 @@ const pillars = [
     number: '03',
     title: 'TITANIUM LASER',
     image: titaniumLaserImg,
-    description: 'Advanced laser systems with training.',
+    description: 'Advanced laser systems with operational enablement.',
     features: [
-      'Operator training included',
+      'Operator enablement included',
       'Technical support'
     ],
     link: '/products/titanium',

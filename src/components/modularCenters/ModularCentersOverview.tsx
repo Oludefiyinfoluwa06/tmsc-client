@@ -9,19 +9,19 @@ export default function ModularCentersOverview() {
           <div className="space-y-8">
             <div>
               <p className="text-red-600 text-sm font-semibold uppercase tracking-widest mb-3">About Us</p>
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">What Are Modular Centers?</h2>
+              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">What Are Digital Production Nodes?</h2>
               <div className="w-20 h-1 bg-linear-to-r from-red-600 to-red-600/20"></div>
             </div>
 
             <p className="text-gray-700 text-lg leading-relaxed">
-              Industrial Modular Centers are deployable facilities that bring world-class manufacturing and training infrastructure to regional locations. They integrate production equipment, training stations, and support services in one integrated facility.
+              Digital Production Nodes are deployable production infrastructure that bring world-class manufacturing capability to regional locations. They integrate production equipment, embedded skills transfer workflows, and support services in one integrated facility.
             </p>
 
             <div className="space-y-5">
               {[
                 { icon: Building2, title: 'Modular Design', desc: 'Configured and deployed based on regional needs' },
-                { icon: Users, title: 'Training Integrated', desc: 'TVET partnerships and operator programs' },
-                { icon: TrendingUp, title: 'Revenue Generation', desc: 'Productive while training workers' }
+                { icon: Users, title: 'Embedded Skills Transfer', desc: 'TVET partnerships and operator programs' },
+                { icon: TrendingUp, title: 'Revenue Generation', desc: 'Productive while transferring operational skills' }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 items-start group">
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-red-50 border border-red-100 flex items-center justify-center group-hover:border-red-500/30 transition-all duration-300">

@@ -9,35 +9,35 @@ export default function ModularCenterTypes() {
       </div> */}
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 relative z-10">
-        <div className="text-center mb-20">
+          <div className="text-center mb-20">
           <p className="text-red-600 text-sm font-semibold uppercase tracking-widest mb-3">Options</p>
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Center Types</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Node Types</h2>
           <div className="w-16 h-1 bg-linear-to-r from-red-600 via-emerald-600 to-transparent mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              title: 'Production Centers',
-              description: 'Full-scale manufacturing facilities equipped for volume production and commercial operations',
+              title: 'Production Units',
+              description: 'Full-scale manufacturing units equipped for volume production and commercial operations',
               features: ['Production line equipment', 'Quality control lab', 'Inventory management', 'Commercial operations'],
               Icon: Factory
             },
             {
-              title: 'Training Centers',
-              description: 'Facilities focused on skill development with training equipment and instructor stations',
-              features: ['Training equipment', 'Practice stations', 'Instructor facilities', 'Certification programs'],
+              title: 'Skills Hubs',
+              description: 'Facilities focused on skills development with instructional equipment and instructor stations',
+              features: ['Skills equipment', 'Practice stations', 'Instructor facilities', 'Certification programs'],
               Icon: GraduationCap
             },
             {
-              title: 'Mixed-Use Centers',
-              description: 'Combined production and training facilities that balance commercial and educational operations',
+              title: 'Mixed-Use Units',
+              description: 'Combined production and skills facilities that balance commercial and operational activities',
               features: ['Dual equipment setup', 'Flexible scheduling', 'Blended revenue models', 'Community benefit'],
               Icon: RotateCcw
             },
             {
               title: 'Regional Hubs',
-              description: 'Networks of interconnected centers serving specific geographic regions or industry clusters',
+              description: 'Networks of interconnected nodes serving specific geographic regions or industry clusters',
               features: ['Multi-location coordination', 'Shared resources', 'Knowledge exchange', 'Regional impact'],
               Icon: Globe
             }

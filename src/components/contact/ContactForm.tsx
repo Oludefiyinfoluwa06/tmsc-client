@@ -51,7 +51,7 @@ export default function ContactForm() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-10 shadow-sm">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            Centre Use & Deployment Enquiry
+            Deployment Enquiry
           </h2>
           <p className="text-gray-600 mb-8">
             This form helps us understand your use case so we can guide the right next step.
@@ -89,7 +89,7 @@ export default function ContactForm() {
 
                 {/* Intended use dropdown */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">Intended use of a Machine & Skills centre <span className="text-red-600">*</span></label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Intended use of a Machine & Skills deployment <span className="text-red-600">*</span></label>
                   <select
                     name="intendedUse"
                     value={formData.intendedUse}
@@ -98,9 +98,9 @@ export default function ContactForm() {
                   >
                     <option value="">Select an option</option>
                     <option value="Production work and skills use">Production work and skills use</option>
-                    <option value="Training linked to real production">Training linked to real production</option>
+                    <option value="Enablement linked to real production">Enablement linked to real production</option>
                     <option value="Institutional or government deployment">Institutional or government deployment</option>
-                    <option value="Exploring centre sponsorship or partnership">Exploring centre sponsorship or partnership</option>
+                    <option value="Exploring deployment sponsorship or partnership">Exploring deployment sponsorship or partnership</option>
                   </select>
                 </div>
 

@@ -4,10 +4,11 @@ import Footer from './components/layout/Footer'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Gallery from './pages/Gallery'
 import MachineExchangeProgram from './pages/MachineExchangeProgram'
-import ModularCenters from './pages/ModularCenters'
 import Partners from './pages/Partners'
+import DigitalProductionNodes from './pages/DigitalProductionNodes'
+import Operations from './pages/Operations'
+import Projects from './pages/Projects'
 import Modoola from './pages/Modoola'
 import MachineExchange from './pages/MachineExchange'
 import TitaniumLaser from './pages/TitaniumLaser'
@@ -22,9 +23,9 @@ function AppLayout() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/machine-exchange-program" element={<MachineExchangeProgram />} />
-          <Route path="/modular-centers" element={<ModularCenters />} />
-          {/* <Route path="/platform" element={<Platform />} /> */}
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/digital-production-nodes" element={<DigitalProductionNodes />} />
+          <Route path="/operations" element={<Operations />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

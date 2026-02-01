@@ -13,7 +13,7 @@ export default function PlatformHero() {
         playsInline
         preload="auto"
       >
-        <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -44,7 +44,7 @@ export default function PlatformHero() {
             <ArrowRight size={20} />
           </Link>
           <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-gray-100 text-gray-900 border-2 border-gray-200 transition-all duration-300 hover:bg-white hover:border-red-600 hover:-translate-y-1" to="/contact">
-            Use a Centre Now
+            Contact
           </Link>
         </div>
       </div>

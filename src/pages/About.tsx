@@ -1,5 +1,6 @@
 import SystemSection from '../components/about/SystemSection';
 import CTASection from '../components/about/CTASection';
+import aboutImg from '../assets/about.jpeg';
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -27,11 +28,11 @@ export default function About() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-tight">About Machine & Skills</h1>
 
           <div className="space-y-6">
-            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The Machine and Skills Company Ltd builds modular training centres that function as working factories.</p>
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The Machine and Skills Company Ltd builds modular production platforms that function as working factories.</p>
 
-            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">Each centre combines industrial-grade machines with structured training, so people learn by producing real outputs, not only through classroom simulation.</p>
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">Each deployment combines industrial-grade machines with structured skills transfer embedded in live production, so people learn by producing real outputs rather than through classroom simulation.</p>
 
-            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The same centre design, machine logic, and operating model are deployed repeatedly across locations.</p>
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">The same node design, machine logic, and operating model are deployed repeatedly across locations.</p>
 
             <p className="text-white/90 text-base md:text-lg leading-relaxed font-light max-w-3xl">We focus on standardisation, execution, and outcomes that are repeatable and consistent.</p>
           </div>
@@ -41,22 +42,40 @@ export default function About() {
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-4xl font-bold mb-12 text-center">What We Do</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              
+              {/* Text Content */}
+              <div>
+                <h2 className="text-4xl font-bold mb-12">
+                  What We Do
+                </h2>
 
-              <ul className="space-y-6">
-                {[
-                  "We design and deploy standardised modular skills-and-production centres.",
-                  "We integrate industrial-grade machines into live training environments.",
-                  "We operate each centre as a functional production facility, not a simulation.",
-                  "Our work is focused on deployment, repeatability, and execution at scale."
-                ].map((bullet, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
-                    <p className="text-gray-700 text-lg leading-relaxed">{bullet}</p>
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-6">
+                  {[
+                    "We design and deploy standardised modular skills-and-production platforms.",
+                    "We integrate industrial-grade machines into live production environments.",
+                    "We operate each deployment as a functional production facility, not a simulation.",
+                    "Our work is focused on deployment, repeatability, and execution at scale."
+                  ].map((bullet, idx) => (
+                    <li key={idx} className="flex items-start gap-4">
+                      <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        {bullet}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Image */}
+              <div className="relative w-full h-[400px] rounded-xl overflow-hidden">
+                <img
+                  src={aboutImg}
+                  alt="Industrial production and skills training"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
             </div>
           </div>
         </div>

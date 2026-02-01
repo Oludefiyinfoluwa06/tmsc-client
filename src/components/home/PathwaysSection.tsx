@@ -45,7 +45,7 @@ export default function PathwaysSection() {
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For OEMs</h3>
             <p className="text-white/70 text-sm mb-6 grow">Market entry and trusted deployments.</p>
             <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
-              View Training Modules <ArrowRight size={16} />
+              View Modules <ArrowRight size={16} />
             </span>
           </Link>
 
@@ -55,7 +55,7 @@ export default function PathwaysSection() {
               <Wrench size={28} className="text-red-600 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">For Local Industry</h3>
-            <p className="text-white/70 text-sm mb-6 grow">Machinery access and training programs.</p>
+            <p className="text-white/70 text-sm mb-6 grow">Machinery access and enablement programs.</p>
             <span className="inline-flex items-center gap-2 text-white/80 font-semibold text-sm group-hover:text-white group-hover:translate-x-1 transition-all">
               View Curriculum <ArrowRight size={16} />
             </span>

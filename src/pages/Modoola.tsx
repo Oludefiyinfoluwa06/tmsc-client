@@ -51,7 +51,7 @@ export default function Modoola() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -65,20 +65,20 @@ export default function Modoola() {
         <div className="relative z-20 w-full mx-auto px-6 md:px-8 text-left pt-20">
           <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/50 rounded-full backdrop-blur">
             <Building2 size={16} className="text-red-400" />
-            <span className="text-red-300 text-sm font-semibold">Modular Industrial Centers</span>
+            <span className="text-red-300 text-sm font-semibold">Modular Industrial Infrastructure</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
             MODOOLA <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-emerald-400 to-cyan-400">Infrastructure</span>
           </h1>
 
-          <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            Deployable centers bringing capacity closer to demand.
+            <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            Deployable production infrastructure bringing capacity closer to demand.
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/contact">
-              Use a center
+              Contact
               <ArrowRight size={20} />
             </Link>
           </div>
@@ -98,7 +98,7 @@ export default function Modoola() {
               {
                 icon: Users,
                 title: 'Skills Integration',
-                description: 'TVET partnerships and training embedded.'
+                description: 'TVET partnerships and embedded skills transfer.'
               },
               {
                 icon: MapPin,
@@ -121,8 +121,8 @@ export default function Modoola() {
       {/* Products (loaded from API) */}
       <ProductGrid
         products={products}
-        title="Modular Center Solutions"
-        description="Choose the modular center package that fits your manufacturing needs"
+          title="Modular Platform Solutions"
+          description="Choose the modular offering that suits your deployment and capability goals."
       />
     </div>
   )

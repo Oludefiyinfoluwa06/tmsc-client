@@ -31,7 +31,7 @@ export default function CorridorSection() {
               <Lightbulb size={40} />
             </div>
             <h4 className="text-xl font-bold text-white mb-2">Design & Deployment</h4>
-            <p className="text-gray-300 text-sm">MODOOLA centers & Machine Exchange platforms</p>
+            <p className="text-gray-300 text-sm">MODOOLA platforms & Machine Exchange platforms</p>
           </div>
 
           <div className="hidden md:flex justify-center">
@@ -43,7 +43,7 @@ export default function CorridorSection() {
               <CheckCircle2 size={40} />
             </div>
             <h4 className="text-xl font-bold text-white mb-2">Execution</h4>
-            <p className="text-gray-300 text-sm">Training, machinery installation & measurable results</p>
+            <p className="text-gray-300 text-sm">Enablement, machinery installation & measurable results</p>
           </div>
         </div>
 

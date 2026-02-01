@@ -15,7 +15,7 @@ export default function PlatformBenefits() {
             { title: 'Transparency', description: 'Clear pricing, specifications, and terms for all transactions', Icon: Eye },
             { title: 'Efficiency', description: 'Streamlined process from browsing to delivery', Icon: Zap },
             { title: 'Trust', description: 'Vetted suppliers and secure transactions', Icon: Lock },
-            { title: 'Support', description: 'Training, installation, and technical assistance included', Icon: Users },
+            { title: 'Support', description: 'Installation and technical assistance included', Icon: Users },
             { title: 'Financing', description: 'Integrated flexible payment and financing options', Icon: CreditCard },
             { title: 'Scale', description: 'Access to equipment across Africa and beyond', Icon: Globe }
           ].map((benefit, idx) => (

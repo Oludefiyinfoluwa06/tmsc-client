@@ -17,7 +17,7 @@ export default function PlatformHowItWorks() {
           {[
             { step: '1', title: 'Browse', description: 'Find equipment or machines for sale' },
             { step: '2', title: 'Connect', description: 'Connect with The Machine and Skills Company' },
-            { step: '3', title: 'Learn', description: 'Learn how to use purchased equipments and machines' }
+            { step: '3', title: 'Enable', description: 'Operator enablement and guidance for purchased equipment' }
           ].map((item, idx) => (
             <div key={item.step} className="relative group">
               {/* Connection Line */}
@@ -63,10 +63,10 @@ export default function PlatformHowItWorks() {
             </div>
 
             <div className="bg-linear-to-br from-white/5 to-white/3 rounded-2xl p-6 border border-white/10">
-              <h4 className="text-white font-semibold mb-2">3. Training & maintenance</h4>
-              <p className="text-white/70 text-sm mb-3">Operator training and ongoing maintenance guidance to maximize uptime.</p>
+              <h4 className="text-white font-semibold mb-2">3. Enablement & maintenance</h4>
+              <p className="text-white/70 text-sm mb-3">Operator enablement and ongoing maintenance guidance to maximize uptime.</p>
               <ul className="text-white/70 text-sm space-y-2">
-                <li>Hands-on operator training</li>
+                <li>Hands-on operator enablement</li>
                 <li>Maintenance and uptime best practices</li>
               </ul>
             </div>

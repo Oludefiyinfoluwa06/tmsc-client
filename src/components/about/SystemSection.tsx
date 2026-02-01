@@ -1,8 +1,8 @@
 export default function SystemSection() {
   const points = [
-    "Machine & Skills centers are designed around a standardized, production-led model.",
-    "Training happens within live industrial environments, where learning is tied directly to real production and use of machines.",
-    "Each centre follows a defined structure and operating approach, allowing the same model to be deployed consistently across locations.",
+    "Machine & Skills deployments are designed around a standardized, production-led model.",
+    "Skills transfer happens within live industrial environments, where learning is tied directly to real production and use of machines.",
+    "Each deployment follows a defined structure and operating approach, allowing the same model to be deployed consistently across locations.",
     "This approach prioritizes execution, repeatability, and measurable outcomes, rather than classroom-only instruction or ad-hoc customisation."
   ];
 

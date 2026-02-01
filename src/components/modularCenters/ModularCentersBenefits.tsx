@@ -20,7 +20,7 @@ export default function ModularCentersBenefits() {
             { title: 'Skill Development', description: 'Build workforce capabilities aligned with industry needs', Icon: GraduationCap },
             { title: 'Infrastructure', description: 'Establish modern manufacturing capacity in your region', Icon: Building },
             { title: 'Partnerships', description: 'Connect with government, TVET, and industry stakeholders', Icon: Handshake },
-            { title: 'Revenue', description: 'Generate income through production and training services', Icon: BarChart3 },
+            { title: 'Revenue', description: 'Generate income through production services', Icon: BarChart3 },
             { title: 'Sustainability', description: 'Build long-term competitive advantage for your community', Icon: Sprout }
           ].map((benefit, idx) => (
             <div key={idx} className="group relative">

@@ -17,7 +17,7 @@ export default function MachineExchangeProgramCTA() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-xl hover:shadow-red-600/50 hover:-translate-y-1" to="/contact">
-           Use a Center for Training
+           Contact
             <ArrowRight size={20} />
           </Link>
           <Link className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent text-white border border-white/40 font-semibold rounded-lg hover:bg-white/10 hover:border-white/60 transition-all duration-300 hover:-translate-y-1" to="/contact">

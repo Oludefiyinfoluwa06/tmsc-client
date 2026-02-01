@@ -25,7 +25,7 @@ export default function WhyPartnerWithUs() {
             {
               Icon: Briefcase,
               title: 'Established Network',
-              description: 'Partner with governments, enterprises, training centers, and financial institutions'
+              description: 'Partner with governments, enterprises, capacity partners, and financial institutions'
             },
             {
               Icon: BarChart3,
@@ -40,7 +40,7 @@ export default function WhyPartnerWithUs() {
             {
               Icon: Building,
               title: 'Infrastructure',
-              description: 'Deploy through our modular centers and established facilities'
+              description: 'Deploy through our modular infrastructure and established facilities'
             },
             {
               Icon: Handshake,

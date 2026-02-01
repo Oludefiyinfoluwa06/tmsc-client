@@ -50,11 +50,11 @@ export default function PartnershipOpportunities() {
             },
             {
               title: 'Installation & Services',
-              description: 'Service providers offering installation, training, and maintenance services',
+              description: 'Service providers offering installation and maintenance services',
               benefits: [
                 'Steady project pipeline',
                 'Certification support',
-                'Training programs',
+                'Operator enablement programs',
                 'Quality assurance',
                 'Revenue opportunities'
               ],

@@ -21,7 +21,7 @@ export default function PlatformWhatIsSection() {
               {[
                 { icon: Zap, title: 'Equipment Listings', desc: 'Browse vetted machines from verified suppliers' },
                 { icon: Shield, title: 'Financing Integration', desc: 'Access structured payment options directly' },
-                { icon: Users, title: 'Support Services', desc: 'Training, installation, and support included' }
+                { icon: Users, title: 'Support Services', desc: 'Installation and operational support included' }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 items-start group">
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-linear-to-br from-red-600/20 to-red-600/5 border border-red-600/30 flex items-center justify-center group-hover:border-red-600/60 transition-all duration-300">
@@ -46,7 +46,7 @@ export default function PlatformWhatIsSection() {
                   { role: 'Suppliers', desc: 'Reach more buyers across Africa with verified credentials' },
                   { role: 'Manufacturers', desc: 'Find equipment that meets your needs with financing' },
                   { role: 'Enterprises', desc: 'Scale production with access to quality equipment' },
-                  { role: 'Training Centers', desc: 'Equip facilities with demonstration equipment' }
+                  { role: 'Operational Partners', desc: 'Equip facilities with demonstration equipment' }
                 ].map((item, idx) => (
                   <div key={idx}>
                     <h4 className="text-red-400 font-semibold mb-2">{item.role}</h4>

@@ -15,10 +15,10 @@ export default function MachineExchangeProgramHowItWorks() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { step: '1', title: 'Submit Needs', description: 'Tell us what equipment you need and your training requirements' },
-            { step: '2', title: 'Quote & Terms', description: 'Receive vetted equipment with training program options' },
-            { step: '3', title: 'Approve & Finance', description: 'Accept terms, financing, and customized training plan' },
-            { step: '4', title: 'Deploy & Train', description: 'Equipment delivered with expert training' }
+            { step: '1', title: 'Submit Needs', description: 'Tell us what equipment you need and your skills requirements' },
+            { step: '2', title: 'Quote & Terms', description: 'Receive vetted equipment with enablement program options' },
+            { step: '3', title: 'Approve & Finance', description: 'Accept terms, financing, and customized enablement plan' },
+            { step: '4', title: 'Deploy & Enable', description: 'Equipment delivered with expert enablement' }
           ].map((item, idx) => (
             <div key={item.step} className="relative group">
               {/* Connection Line */}

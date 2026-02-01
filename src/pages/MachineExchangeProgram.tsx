@@ -10,7 +10,7 @@ export default function MachineExchangeProgram() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

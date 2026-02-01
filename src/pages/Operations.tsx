@@ -7,7 +7,7 @@ import {
 } from '../components/modularCenters'
 import CentersList from '../components/modularCenters/CentersList'
 
-export default function ModularCenters() {
+export default function Operations() {
   return (
     <>
       <ModularCentersHero />

@@ -16,7 +16,7 @@ export default function EngagementHighlights() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Stat Cards */}
             {[
-              { stat: "15+", label: "Industrial Centers Deployed" },
+              { stat: "15+", label: "Industrial Deployments Completed" },
               { stat: "2,500+", label: "Trained Artisans & Technicians" },
               { stat: "8", label: "Countries & Corridor Partners" },
               { stat: "100%", label: "Project Execution Rate" }
@@ -41,7 +41,7 @@ export default function EngagementHighlights() {
               },
               {
                 title: "Modular Parks",
-                desc: "Containerized manufacturing centers."
+                desc: "Containerized manufacturing infrastructure."
               },
               {
                 title: "OEM Partnerships",

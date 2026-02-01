@@ -1,7 +1,7 @@
 export default function Standardization() {
   const highlights = [
     "Standardization is the operating foundation of Machine & Skills.",
-    "Each centre is deployed using the same structural layout, machine configuration, and operating logic. This ensures consistency in how centers are set up, used, and managed across locations.",
+    "Each node is deployed using the same structural layout, machine configuration, and operating logic. This ensures consistency in how nodes are set up, used, and managed across locations.",
     "By standardizing the environment, we reduce variability, control costs, and enable repeatable outcomes without redesigning the model for each deployment.",
     "Flexibility exists within the framework, not outside it. Local conditions are accommodated without altering the core structure or operating approach."
   ];

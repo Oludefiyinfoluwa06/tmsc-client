@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { AlbumSelector, AlbumGrid, GalleryCTA, type Album } from '../components/gallery';
 import { fetchGalleryGroups } from '../api'
+import { ArrowRight, Award } from 'lucide-react';
 
-export default function Gallery() {
+export default function Projects() {
   const [albums, setAlbums] = useState<Album[]>([]);
   const [selectedAlbum, setSelectedAlbum] = useState<string>('');
   const [searchParams] = useSearchParams();
@@ -60,19 +61,32 @@ export default function Gallery() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766446396/hero-vid_oj6v2d.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
 
-        <div className="relative z-20 w-full mx-auto px-6 md:px-12 text-left pt-20 max-w-5xl">
-          <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/40 rounded-full backdrop-blur">
-            <span className="text-red-300 text-xs font-semibold tracking-widest uppercase">Visual Stories</span>
+        <div className="relative z-20 w-full mx-auto px-6 md:px-8 text-left pt-20">
+          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/50 rounded-full backdrop-blur">
+            <Award size={16} className="text-red-400" />
+            <span className="text-red-300 text-sm font-semibold">Projects</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Gallery</h1>
-          <p className="text-white/90 text-base leading-relaxed font-light max-w-3xl">A showcase of our training sessions, workshops, and equipment exchange activities.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
+            PROJECTS
+          </h1>
+
+          <p className="text-base md:text-lg text-white/90 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            Selected deployed systems and project examples showing production-first deployments.
+          </p>
+
+          <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1" to="/contact">
+              Contact
+              <ArrowRight size={20} />
+            </Link>
+          </div>
         </div>
       </section>
 
