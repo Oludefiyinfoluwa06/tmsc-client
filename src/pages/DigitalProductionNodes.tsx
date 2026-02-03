@@ -14,7 +14,7 @@ export default function DigitalProductionNodes() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1770150721/tmsc-hero_ttnulb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -44,7 +44,7 @@ export default function DigitalProductionNodes() {
       </section>
 
       {/* Introductory Copy */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section className="py-20 md:py-32 bg-linear-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
@@ -198,7 +198,7 @@ export default function DigitalProductionNodes() {
                   { title: 'Complete Systems', desc: 'Deployed as complete operating systems, including workflows, supervision, and digital tracking' },
                   { title: 'Immediate Activity', desc: 'Commissioned with defined production use-cases to ensure immediate activity' }
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-gradient-to-r from-red-50 to-transparent rounded-lg p-6 border border-red-100">
+                  <div key={idx} className="bg-linear-to-r from-red-50 to-transparent rounded-lg p-6 border border-red-100">
                     <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
                     <p className="text-gray-700">{item.desc}</p>
                   </div>

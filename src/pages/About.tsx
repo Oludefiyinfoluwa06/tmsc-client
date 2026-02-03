@@ -14,7 +14,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1766813852/WhatsApp_Video_2025-12-22_at_9.17.20_PM_am07yf.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1770150721/tmsc-hero_ttnulb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -43,7 +43,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-12 md:p-16 shadow-lg">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              
+
               {/* Text Content */}
               <div>
                 <h2 className="text-4xl font-bold mb-12">
@@ -68,7 +68,7 @@ export default function About() {
               </div>
 
               {/* Image */}
-              <div className="relative w-full h-[400px] rounded-xl overflow-hidden">
+              <div className="relative w-full h-100 rounded-xl overflow-hidden">
                 <img
                   src={aboutImg}
                   alt="Industrial production and skills training"
