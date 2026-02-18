@@ -11,7 +11,7 @@ export default function ContactHero() {
         loop
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1770150721/tmsc-hero_ttnulb.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1771450258/tmsc-hero_pguscb.mp4" />
       </video>
 
       {/* Gradient Overlay */}

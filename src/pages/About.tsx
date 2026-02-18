@@ -14,7 +14,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1770150721/tmsc-hero_ttnulb.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dlpbzlmix/video/upload/v1771450258/tmsc-hero_pguscb.mp4" />
           Your browser does not support the video tag.
         </video>
 
