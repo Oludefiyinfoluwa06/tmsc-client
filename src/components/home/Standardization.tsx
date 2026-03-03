@@ -7,24 +7,24 @@ export default function Standardization() {
   ];
 
   return (
-    <section className="w-full py-32 bg-linear-to-b from-red-50/50 to-white relative overflow-hidden">
+    <section className="w-full py-32 bg-linear-to-b from-primary-50/50 to-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 right-0 w-96 h-96 bg-red-400/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary-400/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-14">
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">Standardization</h2>
-          <div className="w-20 h-1 bg-linear-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-primary-500 to-primary-600 mx-auto rounded-full"></div>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-4">
           {highlights.map((text, index) => (
             <div
               key={index}
-              className="relative bg-white border border-gray-100 rounded-xl p-8 hover:shadow-lg hover:border-red-200 transition-all duration-300 group"
+              className="relative bg-white border border-gray-100 rounded-xl p-8 hover:shadow-lg hover:border-primary-200 transition-all duration-300 group"
             >
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-red-500 to-red-600 rounded-l-xl"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-primary-500 to-primary-600 rounded-l-xl"></div>
               <div className="pl-6">
                 <p className="text-gray-700 text-lg leading-relaxed">{text}</p>
               </div>

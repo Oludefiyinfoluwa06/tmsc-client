@@ -12,7 +12,7 @@ interface PrimaryButtonProps {
  * Primary CTA Button Component
  * 
  * Specifications:
- * - Solid red-600 fill color (exclusive to primary buttons)
+ * - Solid primary-600 fill color (exclusive to primary buttons)
  * - High contrast white text
  * - Larger padding (px-8 py-4)
  * - Prominent shadow and hover effects
@@ -34,10 +34,10 @@ export default function PrimaryButton({
         px-8 py-4
         rounded-lg font-semibold text-base
         text-white
-        bg-red-600
+        bg-primary-600
         shadow-lg
         transition-all duration-300
-        hover:bg-red-700
+        hover:bg-primary-700
         hover:shadow-xl
         hover:-translate-y-1
         ${className}

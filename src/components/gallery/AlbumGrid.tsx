@@ -27,7 +27,7 @@ export default function AlbumGrid({ album }: AlbumGridProps) {
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
               <div className="p-6 w-full">
-                <p className="text-sm text-red-600 font-semibold mb-1">IMAGE {idx + 1}</p>
+                <p className="text-sm text-primary-600 font-semibold mb-1">IMAGE {idx + 1}</p>
                 <p className="text-white/90 text-sm">{album.title}</p>
               </div>
             </div>

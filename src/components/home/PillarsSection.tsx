@@ -51,7 +51,7 @@ const pillars = [
 export default function PillarsSection() {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
@@ -89,13 +89,13 @@ export default function PillarsSection() {
                 <ul className="space-y-2 mb-8">
                   {pillar.features.map((feature, featureIdx) => (
                     <li key={featureIdx} className="flex items-start gap-2 text-white/80 text-sm">
-                      <span className="text-red-500 mt-1">•</span>
+                      <span className="text-primary-500 mt-1">•</span>
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Link to={pillar.link} className="inline-flex items-center gap-2 text-red-500 font-semibold text-sm hover:text-red-400 transition-colors w-fit">
+                <Link to={pillar.link} className="inline-flex items-center gap-2 text-primary-500 font-semibold text-sm hover:text-primary-400 transition-colors w-fit">
                   {pillar.linkText} <ArrowRight size={16} />
                 </Link>
               </div>

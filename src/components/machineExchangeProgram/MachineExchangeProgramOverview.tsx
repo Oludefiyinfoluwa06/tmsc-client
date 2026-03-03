@@ -8,9 +8,9 @@ export default function MachineExchangeProgramOverview() {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">What is it?</p>
+              <p className="text-primary-400 text-sm font-semibold uppercase tracking-widest mb-3">What is it?</p>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Machine Exchange Program</h2>
-              <div className="w-20 h-1 bg-linear-to-r from-red-600 to-transparent"></div>
+              <div className="w-20 h-1 bg-linear-to-r from-primary-600 to-transparent"></div>
             </div>
 
             <p className="text-white/80 text-lg leading-relaxed">
@@ -24,8 +24,8 @@ export default function MachineExchangeProgramOverview() {
                 { icon: Users, title: 'Operator Enablement', desc: 'Expert-led enablement & certification for your teams' }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 items-start group">
-                  <div className="shrink-0 w-12 h-12 rounded-lg bg-linear-to-br from-red-600/20 to-red-600/5 border border-red-600/30 flex items-center justify-center group-hover:border-red-600/60 transition-all duration-300">
-                    <item.icon className="text-red-400" size={24} />
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-linear-to-br from-primary-600/20 to-primary-600/5 border border-primary-600/30 flex items-center justify-center group-hover:border-primary-600/60 transition-all duration-300">
+                    <item.icon className="text-primary-400" size={24} />
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">{item.title}</h3>
@@ -38,7 +38,7 @@ export default function MachineExchangeProgramOverview() {
 
           {/* Right Content */}
           <div className="relative">
-            <div className="absolute inset-0 bg-linear-to-br from-red-600/20 to-blue-600/20 rounded-2xl blur-2xl"></div>
+            <div className="absolute inset-0 bg-linear-to-br from-primary-600/20 to-blue-600/20 rounded-2xl blur-2xl"></div>
             <div className="relative bg-linear-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/20 backdrop-blur-xl">
               <h3 className="text-2xl font-bold text-white mb-8">Who It's For</h3>
               <ul className="space-y-4">
@@ -51,7 +51,7 @@ export default function MachineExchangeProgramOverview() {
                   'Industries requiring specialized machinery'
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 group">
-                    <CheckCircle className="text-red-500 shrink-0 mt-1 group-hover:scale-110 transition-transform" size={20} />
+                    <CheckCircle className="text-primary-500 shrink-0 mt-1 group-hover:scale-110 transition-transform" size={20} />
                     <span className="text-white/90">{item}</span>
                   </li>
                 ))}

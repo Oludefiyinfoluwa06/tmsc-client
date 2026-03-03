@@ -42,9 +42,9 @@ export default function WhyContact() {
             return (
               <div
                 key={index}
-                className="group bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-red-500/50 hover:bg-gray-900/80 transition-all"
+                className="group bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-primary-500/50 hover:bg-gray-900/80 transition-all"
               >
-                <Icon className="w-8 h-8 text-red-400 mb-4 group-hover:scale-110 transition-transform" />
+                <Icon className="w-8 h-8 text-primary-400 mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-lg font-semibold text-white mb-3">
                   {reason.title}
                 </h3>

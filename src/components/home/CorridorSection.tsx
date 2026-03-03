@@ -48,7 +48,7 @@ export default function CorridorSection() {
         </div>
 
         <div className="flex justify-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-          <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white cursor-pointer bg-red-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-red-700">
+          <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white cursor-pointer bg-primary-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-primary-700">
             Join the Corridor
             <ArrowRight size={20} />
           </Link>
