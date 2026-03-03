@@ -5,9 +5,9 @@ export default function PlatformBenefits() {
     <section className="py-32 bg-black">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-20">
-          <p className="text-red-400 text-sm font-semibold uppercase tracking-widest mb-3">Advantages</p>
+          <p className="text-primary-400 text-sm font-semibold uppercase tracking-widest mb-3">Advantages</p>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Platform Benefits</h2>
-          <div className="w-16 h-1 bg-linear-to-r from-red-600 via-emerald-400 to-transparent mx-auto"></div>
+          <div className="w-16 h-1 bg-linear-to-r from-primary-600 via-emerald-400 to-transparent mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -21,8 +21,8 @@ export default function PlatformBenefits() {
           ].map((benefit, idx) => (
             <div key={idx} className="flex gap-6">
               <div className="shrink-0">
-                <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-linear-to-br from-red-600/20 to-red-600/5 border border-red-600/30">
-                  <benefit.Icon className="text-red-400" size={24} />
+                <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-linear-to-br from-primary-600/20 to-primary-600/5 border border-primary-600/30">
+                  <benefit.Icon className="text-primary-400" size={24} />
                 </div>
               </div>
               <div>

@@ -21,17 +21,17 @@ export default function PlatformHero() {
       <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10"></div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl z-0"></div>
+      <div className="absolute top-20 right-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl z-0"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl z-0"></div>
 
       <div className="relative z-20 w-full mx-auto px-6 md:px-8 text-left mt-30">
-        <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/50 rounded-full backdrop-blur">
-          <Globe size={16} className="text-red-400" />
-          <span className="text-red-300 text-sm font-semibold">Digital Marketplace</span>
+        <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/50 rounded-full backdrop-blur">
+          <Globe size={16} className="text-primary-400" />
+          <span className="text-primary-300 text-sm font-semibold">Digital Marketplace</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8 animate-fade-in-up text-gray-900">
-          Machine Exchange <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-red-600 via-emerald-600 to-cyan-600">Platform</span>
+          Machine Exchange <br /><span className="text-transparent bg-clip-text bg-linear-to-r from-primary-600 via-emerald-600 to-cyan-600">Platform</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-800 mb-12 max-w-2xl leading-relaxed animate-fade-in-up font-medium" style={{animationDelay: '0.1s'}}>
@@ -39,11 +39,11 @@ export default function PlatformHero() {
         </p>
 
         <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-red-500 hover:to-red-400" to="/contact">
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-primary-600 to-primary-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:from-primary-500 hover:to-primary-400" to="/contact">
             Join Waitlist
             <ArrowRight size={20} />
           </Link>
-          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-gray-100 text-gray-900 border-2 border-gray-200 transition-all duration-300 hover:bg-white hover:border-red-600 hover:-translate-y-1" to="/contact">
+          <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-base bg-gray-100 text-gray-900 border-2 border-gray-200 transition-all duration-300 hover:bg-white hover:border-primary-600 hover:-translate-y-1" to="/contact">
             Contact
           </Link>
         </div>

@@ -5,7 +5,7 @@ export default function GalleryCTA() {
   return (
     <div className="text-center border-t border-white/10 pt-16 mt-32">
       <p className="text-black text-lg mb-6">Ready to see our solutions at work?</p>
-      <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 no-underline">
+      <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300 no-underline">
         Contact
         <ArrowRight size={18} />
       </Link>

@@ -64,7 +64,7 @@ export default function CentersList() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((c) => (
-            <article key={c.id} className="group bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 hover:border-red-500/60 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-1">
+            <article key={c.id} className="group bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 hover:border-primary-500/60 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/10 hover:-translate-y-1">
               {c.imageUrl ? (
                 <div className="w-full h-48 bg-gray-800 overflow-hidden relative">
                   <img src={c.imageUrl} alt={c.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
@@ -83,7 +83,7 @@ export default function CentersList() {
 
                 {c.location && (
                   <div className="flex items-center gap-2 text-gray-300">
-                    <MapPin size={16} className="text-red-400 shrink-0" />
+                    <MapPin size={16} className="text-primary-400 shrink-0" />
                     <span className="text-sm font-medium">{c.location}</span>
                   </div>
                 )}

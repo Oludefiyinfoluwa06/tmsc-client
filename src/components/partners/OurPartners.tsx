@@ -15,7 +15,7 @@ export default function OurPartners() {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
       {/* <div className="absolute inset-0">
-        <div className="absolute top-1/2 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl"></div>
       </div> */}
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 relative z-10">
@@ -26,7 +26,7 @@ export default function OurPartners() {
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {partners.map((partner, idx) => (
-            <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-red-500/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center h-32 group hover:-translate-y-2">
+            <div key={idx} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-primary-500/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center h-32 group hover:-translate-y-2">
               <img 
                 src={partner} 
                 alt={`Partner ${idx + 1}`}

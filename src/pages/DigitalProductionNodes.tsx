@@ -18,12 +18,12 @@ export default function DigitalProductionNodes() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-primary-900/50 to-blue-900/70 z-10"></div>
 
         <div className="relative z-20 w-full mx-auto px-6 md:px-8 text-left pt-20">
-          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/50 rounded-full backdrop-blur">
-            <Factory size={16} className="text-red-400" />
-            <span className="text-red-300 text-sm font-semibold">Digital Production Nodes</span>
+          <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/50 rounded-full backdrop-blur">
+            <Factory size={16} className="text-primary-400" />
+            <span className="text-primary-300 text-sm font-semibold">Digital Production Nodes</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up">
@@ -35,7 +35,7 @@ export default function DigitalProductionNodes() {
           </p>
 
           <div className="flex gap-4 flex-wrap mb-22 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1" to="/contact">
+            <Link className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white bg-linear-to-r from-primary-600 to-primary-500 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1" to="/contact">
               Deploy a Digital Production Node
               <ArrowRight size={20} />
             </Link>
@@ -51,7 +51,7 @@ export default function DigitalProductionNodes() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">What Are Digital Production Nodes?</h2>
-                <div className="w-20 h-1 bg-linear-to-r from-red-600 to-red-600/20"></div>
+                <div className="w-20 h-1 bg-linear-to-r from-primary-600 to-primary-600/20"></div>
               </div>
 
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -65,8 +65,8 @@ export default function DigitalProductionNodes() {
                   { icon: TrendingUp, title: 'Revenue Generation', desc: 'Productive while transferring operational skills' }
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4 items-start group">
-                    <div className="shrink-0 w-12 h-12 rounded-lg bg-red-50 border border-red-100 flex items-center justify-center group-hover:border-red-500/30 transition-all duration-300">
-                      <item.icon className="text-red-600" size={24} />
+                    <div className="shrink-0 w-12 h-12 rounded-lg bg-primary-50 border border-primary-100 flex items-center justify-center group-hover:border-primary-500/30 transition-all duration-300">
+                      <item.icon className="text-primary-600" size={24} />
                     </div>
                     <div>
                       <h3 className="text-gray-900 font-semibold mb-1">{item.title}</h3>
@@ -79,7 +79,7 @@ export default function DigitalProductionNodes() {
 
             {/* Right Content */}
             <div className="relative">
-              <div className="absolute inset-0 bg-linear-to-br from-red-500/5 to-blue-500/5 rounded-2xl blur-2xl"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-primary-500/5 to-blue-500/5 rounded-2xl blur-2xl"></div>
               <div className="relative bg-gray-50 rounded-2xl p-8 border border-gray-100 backdrop-blur-xl">
                 <h3 className="text-2xl font-bold text-gray-900 mb-8">Key Components</h3>
                 <ul className="space-y-4">
@@ -91,7 +91,7 @@ export default function DigitalProductionNodes() {
                     'Quality assurance systems'
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3 group">
-                      <CheckCircle className="text-red-600 shrink-0 mt-1 group-hover:scale-110 transition-transform" size={20} />
+                      <CheckCircle className="text-primary-600 shrink-0 mt-1 group-hover:scale-110 transition-transform" size={20} />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -124,7 +124,7 @@ export default function DigitalProductionNodes() {
                   'Scale across locations through replication, not redesign'
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                    <span className="text-red-600 font-bold mt-1">✓</span>
+                    <span className="text-primary-600 font-bold mt-1">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -142,8 +142,8 @@ export default function DigitalProductionNodes() {
                   'Predictable operational performance',
                   'Rapid replication across states, sectors, and operators'
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3 bg-red-50 rounded-lg p-4 border border-red-100">
-                    <span className="text-red-600 font-bold mt-1">→</span>
+                  <div key={idx} className="flex items-start gap-3 bg-primary-50 rounded-lg p-4 border border-primary-100">
+                    <span className="text-primary-600 font-bold mt-1">→</span>
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -161,7 +161,7 @@ export default function DigitalProductionNodes() {
                   'Traceable productivity from day one'
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-gray-700">
-                    <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+                    <span className="w-2 h-2 bg-primary-600 rounded-full"></span>
                     {item}
                   </div>
                 ))}
@@ -198,7 +198,7 @@ export default function DigitalProductionNodes() {
                   { title: 'Complete Systems', desc: 'Deployed as complete operating systems, including workflows, supervision, and digital tracking' },
                   { title: 'Immediate Activity', desc: 'Commissioned with defined production use-cases to ensure immediate activity' }
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-linear-to-r from-red-50 to-transparent rounded-lg p-6 border border-red-100">
+                  <div key={idx} className="bg-linear-to-r from-primary-50 to-transparent rounded-lg p-6 border border-primary-100">
                     <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
                     <p className="text-gray-700">{item.desc}</p>
                   </div>

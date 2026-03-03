@@ -30,10 +30,10 @@ export default function ProductCard({
   }
 
   return (
-    <div className="bg-gray-900/50 border border-gray-800 rounded-lg overflow-hidden hover:border-red-500/50 transition-all group">
+    <div className="bg-gray-900/50 border border-gray-800 rounded-lg overflow-hidden hover:border-primary-500/50 transition-all group">
       {/* Product Image */}
       {image && (
-        <div className="w-full h-48 bg-linear-to-br from-red-500/10 to-blue-500/10 flex items-center justify-center overflow-hidden">
+        <div className="w-full h-48 bg-linear-to-br from-primary-500/10 to-blue-500/10 flex items-center justify-center overflow-hidden">
           <img
             src={image}
             alt={name}
@@ -53,7 +53,7 @@ export default function ProductCard({
           <ul className="space-y-2 mb-4">
             {features.map((feature, idx) => (
               <li key={idx} className="text-gray-400 text-sm flex items-start gap-2">
-                <span className="text-red-400 mt-1">•</span>
+                <span className="text-primary-400 mt-1">•</span>
                 <span>{feature}</span>
               </li>
             ))}
@@ -64,7 +64,7 @@ export default function ProductCard({
         {price && (
           <div className="mb-4 pt-4 border-t border-gray-800">
             <p className="text-sm text-gray-500">Price</p>
-            <p className="text-2xl font-bold text-red-400">{price}</p>
+            <p className="text-2xl font-bold text-primary-400">{price}</p>
           </div>
         )}
 

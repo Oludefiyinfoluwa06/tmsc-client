@@ -11,7 +11,7 @@ export default function AboutSection() {
           <div className="animate-fade-in-up">
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">About Us</h2>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary-600 mb-8">
               Empowering Artisans, <br />Transforming Industries
             </h3>
 
@@ -25,7 +25,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <Link to="/about" className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-500 transition-colors mt-8">
+            <Link to="/about" className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-500 transition-colors mt-8">
               Read More
               <ArrowRight size={18} />
             </Link>

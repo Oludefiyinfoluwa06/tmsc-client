@@ -16,11 +16,11 @@ export default function Partners() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-primary-900/50 to-blue-900/70 z-10"></div>
 
         <div className="relative z-20 w-full mx-auto px-6 md:px-12 text-left pt-20 max-w-5xl">
-          <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/40 rounded-full backdrop-blur">
-            <span className="text-red-300 text-xs font-semibold tracking-widest uppercase">Partnerships</span>
+          <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/40 rounded-full backdrop-blur">
+            <span className="text-primary-300 text-xs font-semibold tracking-widest uppercase">Partnerships</span>
           </div>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">Our Partners</h1>

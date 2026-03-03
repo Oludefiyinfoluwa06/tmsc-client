@@ -63,13 +63,13 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Full Name */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">Full Name <span className="text-red-600">*</span></label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Full Name <span className="text-primary-600">*</span></label>
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                     placeholder="Full Name"
                   />
                 </div>
@@ -82,19 +82,19 @@ export default function ContactForm() {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                     placeholder="Organisation / Company"
                   />
                 </div>
 
                 {/* Intended use dropdown */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">Intended use of a Machine & Skills deployment <span className="text-red-600">*</span></label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Intended use of a Machine & Skills deployment <span className="text-primary-600">*</span></label>
                   <select
                     name="intendedUse"
                     value={formData.intendedUse}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                   >
                     <option value="">Select an option</option>
                     <option value="Production work and skills use">Production work and skills use</option>
@@ -106,13 +106,13 @@ export default function ContactForm() {
 
                 {/* Location */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">Location <span className="text-red-600">*</span></label>
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">Location <span className="text-primary-600">*</span></label>
                   <input
                     type="text"
                     name="location"
                     value={formData.location}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                     placeholder="City / State"
                   />
                 </div>
@@ -120,13 +120,13 @@ export default function ContactForm() {
 
               {/* Brief description */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Brief description <span className="text-red-600">*</span></label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Brief description <span className="text-primary-600">*</span></label>
                 <textarea
                   name="description"
                   value={formData.description}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all resize-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all resize-none"
                   placeholder="In a few sentences, describe what you want to do."
                 />
               </div>
@@ -140,7 +140,7 @@ export default function ContactForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                     placeholder="Email Address"
                   />
                 </div>
@@ -152,14 +152,14 @@ export default function ContactForm() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
                     placeholder="Phone Number"
                   />
                 </div>
               </div>
 
               <p className="text-gray-600 text-sm">
-                <span className="text-red-600">*</span> Required fields. We respect your privacy and will only contact you regarding your enquiry.
+                <span className="text-primary-600">*</span> Required fields. We respect your privacy and will only contact you regarding your enquiry.
               </p>
 
               {/* Submit Button */}
@@ -167,7 +167,7 @@ export default function ContactForm() {
                 <button
                   onClick={handleSendViaWhatsApp}
                   type="button"
-                  className="px-8 py-3 bg-linear-to-r from-red-600 to-red-700 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
+                  className="px-8 py-3 bg-linear-to-r from-primary-600 to-primary-700 text-white font-semibold rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
                 >
                   Submit Enquiry
                 </button>

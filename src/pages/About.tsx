@@ -18,11 +18,11 @@ export default function About() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-red-900/50 to-blue-900/70 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-gray-900/70 via-primary-900/50 to-blue-900/70 z-10"></div>
 
         <div className="relative z-20 w-full mx-auto px-6 md:px-12 text-left pt-20 max-w-5xl">
-          <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/40 rounded-full backdrop-blur">
-            <span className="text-red-300 text-xs font-semibold tracking-widest uppercase">Our Story</span>
+          <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/40 rounded-full backdrop-blur">
+            <span className="text-primary-300 text-xs font-semibold tracking-widest uppercase">Our Story</span>
           </div>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-tight">About Machine & Skills</h1>
@@ -58,7 +58,7 @@ export default function About() {
                     "Our work is focused on deployment, repeatability, and execution at scale."
                   ].map((bullet, idx) => (
                     <li key={idx} className="flex items-start gap-4">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                      <span className="mt-2 w-2 h-2 rounded-full bg-primary-600 shrink-0"></span>
                       <p className="text-gray-700 text-lg leading-relaxed">
                         {bullet}
                       </p>
